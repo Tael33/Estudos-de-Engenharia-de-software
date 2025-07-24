@@ -1,0 +1,51 @@
+{
+  "pasta_origem": "COLOQUE_O_CAMINHO_DA_SUA_PASTA_AQUI",
+  "pasta_destino_base": "",
+  "ativar_recursao": true,
+  "log_arquivo": "organizador_detalhado.log",
+  "ordem_estrategias": ["palavra_chave", "extensao", "data"],
+  "pasta_geral_outros": "ArquivosNaoCategorizados",
+  "estrategias_organizacao": {
+    "palavra_chave": {
+      "ativada": true,
+      "regras": [
+        {"palavras": ["fatura", "boleto", "recibo"], "pasta": "FINANCEIRO/ContasPagas"},
+        {"palavras": ["relatorio", "apresentacao"], "pasta": "TRABALHO/Relatorios"},
+        {"palavras": ["ferias", "viagem_"], "pasta": "PESSOAL/Fotos/Viagens"},
+        {"palavras": ["nota_fiscal", "nf"], "pasta": "FINANCEIRO/NotasFiscais"}
+      ],
+      "sensivel_a_maiusculas_minusculas": false
+    },
+    "extensao": {
+      "ativada": true,
+      "mapa": {
+        ".jpg": "IMAGENS/JPG",
+        ".jpeg": "IMAGENS/JPG",
+        ".png": "IMAGENS/PNG",
+        ".gif": "IMAGENS/GIF",
+        ".pdf": "DOCUMENTOS/PDF",
+        ".docx": "DOCUMENTOS/Word",
+        ".doc": "DOCUMENTOS/Word",
+        ".xlsx": "DOCUMENTOS/Excel",
+        ".xls": "DOCUMENTOS/Excel",
+        ".pptx": "APRESENTACOES",
+        ".txt": "TEXTOS",
+        ".zip": "COMPACTADOS",
+        ".rar": "COMPACTADOS",
+        ".mp3": "AUDIO/MP3",
+        ".wav": "AUDIO/WAV",
+        ".mp4": "VIDEOS/MP4",
+        ".mkv": "VIDEOS/MKV",
+        ".mov": "VIDEOS/MOV",
+        ".py": "SCRIPTS/Python"
+      },
+      "pasta_se_nao_mapeado": "Outros_Por_Extensao"
+    },
+    "data": {
+      "ativada": false,
+      "formato_pasta": "%Y/%m-%B",
+      "usar_data_modificacao": true,
+      "aplicar_a_extensoes": [".jpg", ".jpeg", ".png", ".mp4", ".mov"]
+    }
+  }
+}

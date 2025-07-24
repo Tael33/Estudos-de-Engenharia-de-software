@@ -1,0 +1,300 @@
+import os
+import shutil
+import json
+import logging
+from datetime import datetime
+
+# --- CONFIGURAÇÃO DE LOG ---
+
+
+def setup_logging(log_file_path):
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file_path, encoding='utf-8'),
+            logging.StreamHandler()  # Para ver logs no console também
+        ]
+    )
+
+# --- CARREGAR CONFIGURAÇÃO ---
+
+
+def carregar_config(config_path='config.json'):
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        logging.info(f"Configuração '{config_path}' carregada com sucesso.")
+        return config
+    except FileNotFoundError:
+        logging.error(
+            f"Erro: Arquivo de configuração '{config_path}' não encontrado.")
+        return None
+    except json.JSONDecodeError:
+        logging.error(
+            f"Erro: Arquivo de configuração '{config_path}' não é um JSON válido.")
+        return None
+
+# --- FUNÇÃO PARA MOVER ARQUIVOS COM SEGURANÇA ---
+
+
+def mover_arquivo_seguro(caminho_origem, pasta_destino_final, nome_arquivo):
+    if not os.path.exists(pasta_destino_final):
+        try:
+            os.makedirs(pasta_destino_final)
+            logging.info(f"Pasta de destino criada: '{pasta_destino_final}'")
+        except Exception as e:
+            logging.error(
+                f"Não foi possível criar pasta de destino '{pasta_destino_final}': {e}")
+            return False
+
+    caminho_final_arquivo = os.path.join(pasta_destino_final, nome_arquivo)
+    novo_nome_arquivo = nome_arquivo
+    contador = 1
+
+    # Evitar sobrescrever arquivos com mesmo nome
+    while os.path.exists(caminho_final_arquivo):
+        nome_base, extensao = os.path.splitext(nome_arquivo)
+        novo_nome_arquivo = f"{nome_base}_{contador}{extensao}"
+        caminho_final_arquivo = os.path.join(
+            pasta_destino_final, novo_nome_arquivo)
+        contador += 1
+
+    if novo_nome_arquivo != nome_arquivo:
+        logging.warning(
+            f"Arquivo '{nome_arquivo}' será salvo como '{novo_nome_arquivo}' para evitar conflito em '{pasta_destino_final}'.")
+
+    try:
+        shutil.move(caminho_origem, caminho_final_arquivo)
+        logging.info(
+            f"Moveu: '{caminho_origem}' PARA '{caminho_final_arquivo}'")
+        return True
+    except Exception as e:
+        logging.error(
+            f"Não foi possível mover '{caminho_origem}' para '{caminho_final_arquivo}': {e}")
+        return False
+
+# --- ESTRATÉGIAS DE ORGANIZAÇÃO ---
+
+
+def tentar_organizar_por_palavra_chave(nome_arquivo, config_palavra_chave):
+    if not config_palavra_chave.get("ativada", False):
+        return None
+
+    nome_verificar = nome_arquivo if config_palavra_chave.get(
+        "sensivel_a_maiusculas_minusculas", False) else nome_arquivo.lower()
+
+    for regra in config_palavra_chave.get("regras", []):
+        palavras_chave = regra.get("palavras", [])
+        pasta_alvo = regra.get("pasta")
+        if not pasta_alvo:
+            continue
+
+        for palavra in palavras_chave:
+            palavra_verificar = palavra if config_palavra_chave.get(
+                "sensivel_a_maiusculas_minusculas", False) else palavra.lower()
+            if palavra_verificar in nome_verificar:
+                logging.debug(
+                    f"Palavra-chave '{palavra}' encontrada em '{nome_arquivo}'. Destino: '{pasta_alvo}'")
+                return pasta_alvo
+    return None
+
+
+def tentar_organizar_por_extensao(nome_arquivo, config_extensao):
+    if not config_extensao.get("ativada", False):
+        return None
+
+    _, extensao = os.path.splitext(nome_arquivo)
+    extensao = extensao.lower()
+
+    pasta_alvo = config_extensao.get("mapa", {}).get(extensao)
+    if pasta_alvo:
+        logging.debug(
+            f"Extensão '{extensao}' mapeada para '{pasta_alvo}' para o arquivo '{nome_arquivo}'.")
+        return pasta_alvo
+    elif config_extensao.get("pasta_se_nao_mapeado"):
+        logging.debug(
+            f"Extensão '{extensao}' não mapeada. Usando pasta padrão: '{config_extensao['pasta_se_nao_mapeado']}'.")
+        return config_extensao["pasta_se_nao_mapeado"]
+    return None
+
+
+def tentar_organizar_por_data(caminho_arquivo, nome_arquivo, config_data):
+    if not config_data.get("ativada", False):
+        return None
+
+    _, extensao = os.path.splitext(nome_arquivo)
+    extensao = extensao.lower()
+    extensoes_aplicaveis = config_data.get("aplicar_a_extensoes", [])
+    if extensoes_aplicaveis and extensao not in extensoes_aplicaveis:
+        logging.debug(
+            f"Organização por data não aplicável à extensão '{extensao}' do arquivo '{nome_arquivo}'.")
+        return None
+
+    try:
+        if config_data.get("usar_data_modificacao", True):
+            timestamp = os.path.getmtime(caminho_arquivo)
+        else:
+            # Data de criação pode ser inconsistente
+            timestamp = os.path.getctime(caminho_arquivo)
+        data_arquivo = datetime.fromtimestamp(timestamp)
+        formato_pasta = config_data.get("formato_pasta", "%Y/%m")
+        pasta_alvo = data_arquivo.strftime(formato_pasta)
+        logging.debug(
+            f"Arquivo '{nome_arquivo}' data: {data_arquivo}. Destino por data: '{pasta_alvo}'")
+        return pasta_alvo
+    except Exception as e:
+        logging.error(
+            f"Erro ao obter data do arquivo '{caminho_arquivo}': {e}")
+        return None
+
+# --- FUNÇÃO PRINCIPAL DE ORGANIZAÇÃO ---
+
+
+def organizar_arquivos(config):
+    pasta_origem = config.get("pasta_origem")
+    if not pasta_origem or not os.path.isdir(pasta_origem):
+        logging.error(
+            f"Pasta de origem '{pasta_origem}' inválida ou não definida no config.json.")
+        print(
+            f"❌ ERRO: Pasta de origem '{pasta_origem}' inválida. Verifique seu config.json.")
+        return
+
+    pasta_destino_base_config = config.get("pasta_destino_base", "")
+    ativar_recursao = config.get("ativar_recursao", False)
+    ordem_estrategias = config.get("ordem_estrategias", [])
+    cfg_estrategias = config.get("estrategias_organizacao", {})
+    pasta_geral_outros = config.get("pasta_geral_outros")
+
+    logging.info(f"Iniciando organização da pasta: '{pasta_origem}'")
+    if pasta_destino_base_config:
+        logging.info(f"Pasta destino base: '{pasta_destino_base_config}'")
+    if ativar_recursao:
+        logging.info("Modo de recursão ATIVADO.")
+    else:
+        logging.info("Modo de recursão DESATIVADO.")
+
+    arquivos_processados = 0
+    arquivos_movidos = 0
+
+    for pasta_atual, _, nomes_arquivos in os.walk(pasta_origem):
+        if not ativar_recursao and pasta_atual != pasta_origem:
+            continue  # Pula subpastas se recursão estiver desativada
+
+        logging.info(f"--- Processando pasta: {pasta_atual} ---")
+        for nome_arquivo in nomes_arquivos:
+            caminho_arquivo_origem = os.path.join(pasta_atual, nome_arquivo)
+            if not os.path.isfile(caminho_arquivo_origem):  # Garante que é um arquivo
+                continue
+
+            arquivos_processados += 1
+            logging.debug(f"Analisando arquivo: '{caminho_arquivo_origem}'")
+            # Subpasta relativa (ex: "Imagens/JPG" ou "2023/Maio")
+            pasta_destino_relativa = None
+
+            # Aplicar estratégias na ordem definida
+            for nome_estrategia in ordem_estrategias:
+                if nome_estrategia == "palavra_chave" and cfg_estrategias.get("palavra_chave"):
+                    pasta_destino_relativa = tentar_organizar_por_palavra_chave(
+                        nome_arquivo, cfg_estrategias["palavra_chave"])
+                elif nome_estrategia == "extensao" and cfg_estrategias.get("extensao"):
+                    pasta_destino_relativa = tentar_organizar_por_extensao(
+                        nome_arquivo, cfg_estrategias["extensao"])
+                elif nome_estrategia == "data" and cfg_estrategias.get("data"):
+                    pasta_destino_relativa = tentar_organizar_por_data(
+                        caminho_arquivo_origem, nome_arquivo, cfg_estrategias["data"])
+
+                if pasta_destino_relativa:
+                    logging.info(
+                        f"Arquivo '{nome_arquivo}' correspondeu à estratégia '{nome_estrategia}'. Destino relativo: '{pasta_destino_relativa}'")
+                    break  # Para na primeira estratégia que encontrar um destino
+
+            # Se nenhuma estratégia específica moveu, usar a pasta geral "Outros"
+            if not pasta_destino_relativa and pasta_geral_outros:
+                pasta_destino_relativa = pasta_geral_outros
+                logging.info(
+                    f"Arquivo '{nome_arquivo}' não correspondeu a nenhuma estratégia. Movendo para '{pasta_geral_outros}'.")
+            elif not pasta_destino_relativa:
+                logging.info(
+                    f"Arquivo '{nome_arquivo}' não correspondeu a nenhuma estratégia e não há pasta 'Outros' geral. Arquivo permanecerá.")
+                continue
+
+            # Define a pasta de destino final
+            if pasta_destino_base_config:  # Se uma base foi definida, tudo vai para lá
+                pasta_destino_final_abs = os.path.join(
+                    pasta_destino_base_config, pasta_destino_relativa)
+            # Senão, cria subpastas dentro da estrutura original (ou da pasta_origem)
+            else:
+                # Se recursivo, mantém a estrutura de subpastas relativas à pasta_origem
+                # ou cria direto na pasta_origem se não for recursivo ou se for arquivo da raiz.
+                # Para simplificar, vamos criar as pastas de destino relativo à `pasta_origem`
+                # ou à `pasta_atual` se `pasta_destino_base` não estiver definida.
+                # Optando por criar relativo à `pasta_origem` para evitar excesso de aninhamento se `pasta_destino_base` não for usada.
+                # Alteração: pastas criadas dentro da pasta onde o arquivo está, a menos que pasta_destino_base seja usada.
+                # Ou, melhor ainda: se pasta_destino_base não for usada, criar na pasta_origem.
+                # Se o arquivo está em pasta_origem/sub1/arquivo.txt e vai para Documentos:
+                # - pasta_destino_base="D:/Organizado" -> D:/Organizado/Documentos/arquivo.txt
+                # - pasta_destino_base="" -> pasta_origem/Documentos/arquivo.txt (mais simples de gerenciar)
+                # Esta lógica assume que se `pasta_destino_base` não for usada, as novas pastas são criadas no nível de `pasta_origem`
+                pasta_destino_final_abs = os.path.join(
+                    pasta_origem, pasta_destino_relativa)
+
+            if mover_arquivo_seguro(caminho_arquivo_origem, pasta_destino_final_abs, nome_arquivo):
+                arquivos_movidos += 1
+
+    logging.info("--- Resumo da Organização ---")
+    logging.info(f"Total de arquivos analisados: {arquivos_processados}")
+    logging.info(f"Total de arquivos movidos: {arquivos_movidos}")
+    logging.info(
+        f"Total de arquivos não movidos (sem correspondência ou erro): {arquivos_processados - arquivos_movidos}")
+    logging.info("✨ Organização concluída! ✨")
+    print("\n✨ Organização concluída! Verifique o arquivo de log para detalhes. ✨")
+
+
+# --- BLOCO PRINCIPAL DE EXECUÇÃO ---
+if __name__ == "__main__":
+    # Carregar configuração
+    config = carregar_config('config.json')
+
+    if config:
+        # Configurar logging usando o caminho do arquivo de log do config.json
+        log_file = config.get("log_arquivo", "organizador.log")
+        setup_logging(log_file)
+
+        pasta_origem_config = config.get(
+            "pasta_origem", "COLOQUE_O_CAMINHO_DA_SUA_PASTA_AQUI")
+        if pasta_origem_config == "COLOQUE_O_CAMINHO_DA_SUA_PASTA_AQUI" or not os.path.isdir(pasta_origem_config):
+            msg_erro = "✋ ATENÇÃO: Configure a 'pasta_origem' no arquivo 'config.json'!"
+            logging.critical(msg_erro)
+            print("--------------------------------------------------------------------")
+            print(msg_erro)
+            print(
+                r"Exemplo Windows:  \"pasta_origem\": \"C:\\Users\\SeuNome\\Downloads\"")
+            print(r"Exemplo Linux/Mac: \"pasta_origem\": \"/home/SeuNome/Downloads\"")
+            print("--------------------------------------------------------------------")
+        else:
+            print(f"\nAVISO IMPORTANTE:")
+            print(
+                f"Este script irá tentar organizar os arquivos da pasta: '{pasta_origem_config}'.")
+            if config.get("pasta_destino_base"):
+                print(
+                    f"Os arquivos organizados serão movidos para subpastas dentro de: '{config.get('pasta_destino_base')}'")
+            else:
+                print("As pastas de destino serão criadas DENTRO da pasta de origem.")
+            print(
+                "É ALTAMENTE RECOMENDADO FAZER UM BACKUP OU TESTAR COM CÓPIAS PRIMEIRO.")
+
+            resposta = input(
+                "Você tem certeza que deseja continuar? (s/N): ").strip().lower()
+            if resposta == 's':
+                logging.info("Usuário confirmou a execução.")
+                organizar_arquivos(config)
+            else:
+                logging.info("Organização cancelada pelo usuário.")
+                print("Organização cancelada.")
+    else:
+        # Logging básico se config não puder ser carregado, para o logfile padrão
+        setup_logging("organizador_erro_config.log")
+        logging.critical(
+            "Não foi possível carregar a configuração. Script não será executado.")
+        print("❌ ERRO CRÍTICO: Não foi possível carregar 'config.json'. Verifique o arquivo e tente novamente.")
