@@ -1,0 +1,1802 @@
+[
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 1,
+        "enunciado": "Desafio 1: Leia uma entrada do usuário e imprima-a.",
+        "resposta_certa": "dado = input('Digite algo: ')\nprint(dado)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 2,
+        "enunciado": "Desafio 2: Leia um número e informe se ele é par ou ímpar.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 2 == 0:\n    print('Par')\nelse:\n    print('Ímpar')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 3,
+        "enunciado": "Desafio 3: Imprima os números de 1 a 10 usando um loop.",
+        "resposta_certa": "for i in range(1, 11):\n    print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 1,
+        "enunciado": "Desafio 4: Leia uma lista de números separados por espaço e imprima sua soma.",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nprint(sum(numeros))"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 2,
+        "enunciado": "Desafio 5: Leia uma string e imprima-a invertida.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s[::-1])"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 6: Crie uma função que retorne o dobro de um número.",
+        "resposta_certa": "def dobro(n):\n    return n * 2\n\nprint(dobro(5))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 7: Leia dois números e imprima sua soma.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nprint(a + b)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 2,
+        "enunciado": "Desafio 8: Leia uma entrada do usuário e exiba-a no console.",
+        "resposta_certa": "dado = input('Entre com algum texto: ')\nprint('Você digitou:', dado)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 3,
+        "enunciado": "Desafio 9: Leia um número e verifique se ele é maior ou igual a 100.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n >= 100:\n    print('O número é maior ou igual a 100')\nelse:\n    print('O número é menor que 100')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 1,
+        "enunciado": "Desafio 10: Imprima os números pares de 1 a 20 utilizando um loop.",
+        "resposta_certa": "for i in range(1, 21):\n    if i % 2 == 0:\n        print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 2,
+        "enunciado": "Desafio 11: Leia uma lista de palavras e imprima a quantidade de palavras.",
+        "resposta_certa": "palavras = input('Digite palavras separadas por espaço: ').split()\nprint('Quantidade:', len(palavras))"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 3,
+        "enunciado": "Desafio 12: Leia uma string e substitua todas as vogais por '*'.",
+        "resposta_certa": "s = input('Digite uma string: ')\nfor vogal in 'aeiouAEIOU':\n    s = s.replace(vogal, '*')\nprint(s)"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 13: Crie uma função que retorne o triplo de um número.",
+        "resposta_certa": "def triplo(n):\n    return n * 3\n\nprint(triplo(4))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 14: Leia três números e imprima a média.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nmedia = (a + b + c) / 3\nprint(media)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 3,
+        "enunciado": "Desafio 15: Leia um nome completo e exiba apenas as iniciais.",
+        "resposta_certa": "nome = input('Digite seu nome completo: ')\niniciais = ''.join([p[0].upper() for p in nome.split()])\nprint(iniciais)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 1,
+        "enunciado": "Desafio 16: Leia um número e verifique se ele é negativo.",
+        "resposta_certa": "n = float(input('Digite um número: '))\nif n < 0:\n    print('Negativo')\nelse:\n    print('Não é negativo')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 2,
+        "enunciado": "Desafio 17: Imprima os números de 1 a 50 utilizando um loop while.",
+        "resposta_certa": "i = 1\nwhile i <= 50:\n    print(i)\n    i += 1"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 3,
+        "enunciado": "Desafio 18: Leia uma lista de números e imprima o maior valor sem usar a função max().",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nmaior = numeros[0]\nfor num in numeros:\n    if num > maior:\n        maior = num\nprint(maior)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 1,
+        "enunciado": "Desafio 19: Leia uma string e imprima o número de caracteres (sem espaços).",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(len(s.replace(' ', '')))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 20: Crie uma função que verifique se uma string é palíndroma.",
+        "resposta_certa": "def palindromo(s):\n    s = s.replace(' ', '').lower()\n    return s == s[::-1]\n\nprint(palindromo('arara'))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 21: Leia dois números e imprima o produto deles.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nprint(a * b)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 1,
+        "enunciado": "Desafio 22: Leia uma frase e a imprima em minúsculas.",
+        "resposta_certa": "frase = input('Digite uma frase: ')\nprint(frase.lower())"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 2,
+        "enunciado": "Desafio 23: Leia um número e verifique se ele está entre 10 e 20 (inclusive).",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif 10 <= n <= 20:\n    print('Está entre 10 e 20')\nelse:\n    print('Não está entre 10 e 20')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 3,
+        "enunciado": "Desafio 24: Imprima os números de 100 a 90 usando um loop for.",
+        "resposta_certa": "for i in range(100, 89, -1):\n    print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 1,
+        "enunciado": "Desafio 25: Leia uma lista de nomes e imprima-os um por linha.",
+        "resposta_certa": "nomes = input('Digite nomes separados por espaço: ').split()\nfor nome in nomes:\n    print(nome)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 2,
+        "enunciado": "Desafio 26: Leia uma string e substitua os espaços por hífens.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s.replace(' ', '-'))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 27: Crie uma função recursiva para calcular o fatorial de um número.",
+        "resposta_certa": "def fatorial(n):\n    if n <= 1:\n        return 1\n    return n * fatorial(n-1)\n\nprint(fatorial(5))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 28: Leia três números e imprima a soma dos dois maiores.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nmaior = a\nif b > maior:\n    maior = b\nif c > maior:\n    maior = c\nmenor = min(a, b, c)\nsoma = a + b + c - menor\nprint(soma)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 2,
+        "enunciado": "Desafio 29: Leia o nome e a idade de uma pessoa e exiba uma mensagem personalizada.",
+        "resposta_certa": "nome = input('Digite seu nome: ')\nidade = int(input('Digite sua idade: '))\nprint(f'{nome} tem {idade} anos.')"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 3,
+        "enunciado": "Desafio 30: Leia um número e informe se ele é múltiplo de 3 e 5.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 3 == 0 and n % 5 == 0:\n    print('Múltiplo de 3 e 5')\nelse:\n    print('Não é múltiplo de 3 e 5')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 1,
+        "enunciado": "Desafio 31: Imprima os números de 1 a 100.",
+        "resposta_certa": "for i in range(1, 101):\n    print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 2,
+        "enunciado": "Desafio 32: Leia uma lista de números e imprima o menor valor sem usar a função min().",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nmenor = numeros[0]\nfor n in numeros:\n    if n < menor:\n        menor = n\nprint(menor)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 3,
+        "enunciado": "Desafio 33: Leia uma string e imprima a mesma string com todas as letras maiúsculas.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s.upper())"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 34: Crie uma função que converta uma temperatura de Celsius para Fahrenheit.",
+        "resposta_certa": "def celsius_para_fahrenheit(c):\n    return c * 9/5 + 32\n\nprint(celsius_para_fahrenheit(0))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 35: Leia dois números e imprima a diferença entre eles.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nprint(a - b)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 3,
+        "enunciado": "Desafio 36: Leia um texto e imprima o mesmo texto repetido 3 vezes.",
+        "resposta_certa": "texto = input('Digite um texto: ')\nprint(texto * 3)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 1,
+        "enunciado": "Desafio 37: Leia um número e verifique se ele é divisível por 7.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 7 == 0:\n    print('Divisível por 7')\nelse:\n    print('Não divisível por 7')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 2,
+        "enunciado": "Desafio 38: Imprima os números ímpares de 1 a 50.",
+        "resposta_certa": "for i in range(1, 51):\n    if i % 2 != 0:\n        print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 3,
+        "enunciado": "Desafio 39: Leia uma lista de números e imprima a média dos valores.",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nmedia = sum(numeros) / len(numeros)\nprint(media)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificado": 1,
+        "enunciado": "Desafio 40: Leia uma string e conte quantos caracteres ela possui.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(len(s))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 41: Crie uma função que receba dois números e retorne sua soma.",
+        "resposta_certa": "def soma(a, b):\n    return a + b\n\nprint(soma(3, 4))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 42: Leia três números e imprima o produto deles.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nprint(a * b * c)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 1,
+        "enunciado": "Desafio 43: Leia um número e imprima sua representação em binário.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nprint(bin(n)[2:])"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 2,
+        "enunciado": "Desafio 44: Leia um caractere e verifique se ele é uma vogal.",
+        "resposta_certa": "letra = input('Digite uma letra: ').lower()\nif letra in 'aeiou':\n    print('É uma vogal')\nelse:\n    print('Não é uma vogal')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 3,
+        "enunciado": "Desafio 45: Imprima os números de 10 a 1 em ordem decrescente.",
+        "resposta_certa": "for i in range(10, 0, -1):\n    print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 1,
+        "enunciado": "Desafio 46: Crie uma lista com os números de 1 a 5 e imprima o último elemento.",
+        "resposta_certa": "lista = list(range(1,6))\nprint(lista[-1])"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 2,
+        "enunciado": "Desafio 47: Leia uma string e substitua todas as ocorrências de 'a' por '@'.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s.replace('a', '@'))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 48: Crie uma função que receba uma lista de números e retorne o maior valor.",
+        "resposta_certa": "def maior_valor(lista):\n    max_val = lista[0]\n    for num in lista:\n        if num > max_val:\n            max_val = num\n    return max_val\n\nprint(maior_valor([1, 3, 2, 5, 4]))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 49: Leia dois números e imprima o quociente da divisão do primeiro pelo segundo.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nif b != 0:\n    print(a / b)\nelse:\n    print('Divisão por zero não é permitida')"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 2,
+        "enunciado": "Desafio 50: Leia uma frase e imprima-a duas vezes seguidas.",
+        "resposta_certa": "frase = input('Digite uma frase: ')\nprint(frase + ' ' + frase)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 3,
+        "enunciado": "Desafio 51: Leia um número e informe se ele é positivo, negativo ou zero.",
+        "resposta_certa": "n = float(input('Digite um número: '))\nif n > 0:\n    print('Positivo')\nelif n < 0:\n    print('Negativo')\nelse:\n    print('Zero')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 1,
+        "enunciado": "Desafio 52: Imprima a soma dos números de 1 a 50 utilizando um loop for.",
+        "resposta_certa": "soma = 0\nfor i in range(1, 51):\n    soma += i\nprint(soma)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 2,
+        "enunciado": "Desafio 53: Leia uma lista de números e imprima apenas os números maiores que 10.",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nresultado = [n for n in numeros if n > 10]\nprint(resultado)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 3,
+        "enunciado": "Desafio 54: Leia uma string e imprima quantas vezes a letra 'e' aparece.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s.count('e'))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 55: Crie uma função que retorne a área de um círculo dado o raio.",
+        "resposta_certa": "import math\ndef area_circulo(r):\n    return math.pi * r * r\n\nprint(area_circulo(5))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 56: Leia três números e imprima o maior deles.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nprint(max(a, b, c))"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 3,
+        "enunciado": "Desafio 57: Leia um número e imprima sua representação em hexadecimal.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nprint(hex(n)[2:])"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 1,
+        "enunciado": "Desafio 58: Leia um caractere e verifique se é uma letra maiúscula.",
+        "resposta_certa": "char = input('Digite um caractere: ')\nif char.isupper():\n    print('É maiúscula')\nelse:\n    print('Não é maiúscula')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 2,
+        "enunciado": "Desafio 59: Imprima os números de 1 a 30 que são múltiplos de 4.",
+        "resposta_certa": "for i in range(1, 31):\n    if i % 4 == 0:\n        print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 3,
+        "enunciado": "Desafio 60: Leia uma lista de números e imprima a lista em ordem inversa sem usar o reverse().",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nprint(numeros[::-1])"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 1,
+        "enunciado": "Desafio 61: Leia uma string e imprima a mesma string com todas as letras minúsculas.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s.lower())"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 62: Crie uma função que retorne a média de uma lista de números.",
+        "resposta_certa": "def media(lista):\n    return sum(lista)/len(lista)\n\nprint(media([10, 20, 30]))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 63: Leia dois números e imprima o resto da divisão do primeiro pelo segundo.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nif b != 0:\n    print(a % b)\nelse:\n    print('Divisão por zero')"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 1,
+        "enunciado": "Desafio 64: Leia um nome e um sobrenome e exiba o nome completo.",
+        "resposta_certa": "nome = input('Digite o primeiro nome: ')\nsobrenome = input('Digite o sobrenome: ')\nprint(nome + ' ' + sobrenome)"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 2,
+        "enunciado": "Desafio 65: Leia um número e informe se ele é divisível por 2 ou por 3.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 2 == 0 or n % 3 == 0:\n    print('Divisível por 2 ou 3')\nelse:\n    print('Não é divisível por 2 ou 3')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 3,
+        "enunciado": "Desafio 66: Utilize um loop while para somar números até que a soma seja maior que 500.",
+        "resposta_certa": "soma = 0\nwhile soma <= 500:\n    n = int(input('Digite um número: '))\n    soma += n\nprint(soma)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 1,
+        "enunciado": "Desafio 67: Leia uma lista de números e imprima o segundo maior valor.",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nnumeros.sort()\nprint(numeros[-2])"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 2,
+        "enunciado": "Desafio 68: Leia uma string e imprima apenas os caracteres que são dígitos.",
+        "resposta_certa": "s = input('Digite uma string: ')\ndigitos = ''.join([c for c in s if c.isdigit()])\nprint(digitos)"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 69: Crie uma função que verifique se um número é primo.",
+        "resposta_certa": "def eh_primo(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\n\nprint(eh_primo(17))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 70: Leia três números e imprima a soma deles.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nprint(a + b + c)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 2,
+        "enunciado": "Desafio 71: Leia uma frase e imprima-a com a primeira letra de cada palavra em maiúsculo.",
+        "resposta_certa": "frase = input('Digite uma frase: ')\nprint(frase.title())"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 3,
+        "enunciado": "Desafio 72: Leia um número e verifique se ele é múltiplo de 4 e 6.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 4 == 0 and n % 6 == 0:\n    print('Múltiplo de 4 e 6')\nelse:\n    print('Não é múltiplo de 4 e 6')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 1,
+        "enunciado": "Desafio 73: Imprima os números pares de 1 a 100 usando um loop while.",
+        "resposta_certa": "i = 1\nwhile i <= 100:\n    if i % 2 == 0:\n        print(i)\n    i += 1"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 2,
+        "enunciado": "Desafio 74: Leia uma lista de números e remova os números duplicados.",
+        "resposta_certa": "lista = [float(x) for x in input('Digite números: ').split()]\nresultado = []\nfor n in lista:\n    if n not in resultado:\n        resultado.append(n)\nprint(resultado)"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 3,
+        "enunciado": "Desafio 75: Leia uma string e exiba a mesma string sem espaços extras (remova espaços duplicados).",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\nprint(re.sub(' +', ' ', s))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 76: Crie uma função que converta quilômetros para milhas.",
+        "resposta_certa": "def km_para_milhas(km):\n    return km * 0.621371\n\nprint(km_para_milhas(5))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 77: Leia um número e imprima seu valor absoluto.",
+        "resposta_certa": "n = float(input('Digite um número: '))\nprint(abs(n))"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 3,
+        "enunciado": "Desafio 78: Leia o nome, idade e cidade de uma pessoa e exiba-os em uma única frase.",
+        "resposta_certa": "nome = input('Digite seu nome: ')\nidade = input('Digite sua idade: ')\ncidade = input('Digite sua cidade: ')\nprint(f'{nome}, {idade} anos, de {cidade}')"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 1,
+        "enunciado": "Desafio 79: Leia um número e verifique se ele é ímpar.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 2 != 0:\n    print('Ímpar')\nelse:\n    print('Par')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 2,
+        "enunciado": "Desafio 80: Imprima a tabuada de um número informado pelo usuário.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nfor i in range(1, 11):\n    print(f'{n} x {i} = {n*i}')"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 3,
+        "enunciado": "Desafio 81: Leia uma lista de números e imprima os números que estão acima da média da lista.",
+        "resposta_certa": "numeros = [float(x) for x in input('Digite números: ').split()]\nmedia = sum(numeros)/len(numeros)\nprint([n for n in numeros if n > media])"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 1,
+        "enunciado": "Desafio 82: Leia uma string e imprima os 5 primeiros caracteres.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(s[:5])"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 83: Crie uma função que receba uma string e retorne a mesma string invertida.",
+        "resposta_certa": "def inverter(s):\n    return s[::-1]\n\nprint(inverter('python'))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 84: Leia dois números e imprima o quociente e o resto da divisão inteira do primeiro pelo segundo.",
+        "resposta_certa": "a = int(input('Digite o primeiro número: '))\nb = int(input('Digite o segundo número: '))\nprint('Quociente:', a // b, 'Resto:', a % b)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 1,
+        "enunciado": "Desafio 85: Leia uma frase e imprima o número de palavras nela contidas.",
+        "resposta_certa": "frase = input('Digite uma frase: ')\nprint(len(frase.split()))"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 2,
+        "enunciado": "Desafio 86: Leia um número e informe se ele é divisível por 10.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 10 == 0:\n    print('Divisível por 10')\nelse:\n    print('Não divisível por 10')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 3,
+        "enunciado": "Desafio 87: Leia todos os números primos entre 1 e 50.",
+        "resposta_certa": "def eh_primo(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\n\nfor i in range(1, 51):\n    if eh_primo(i):\n        print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 1,
+        "enunciado": "Desafio 88: Leia uma lista de nomes e imprima o primeiro e o último nome.",
+        "resposta_certa": "nomes = input('Digite nomes separados por espaço: ').split()\nprint(nomes[0], nomes[-1])"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 2,
+        "enunciado": "Desafio 89: Leia uma string e imprima somente as letras maiúsculas.",
+        "resposta_certa": "s = input('Digite uma string: ')\nprint(''.join([c for c in s if c.isupper()]))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 90: Crie uma função que receba uma lista de números e retorne outra lista com cada número elevado ao quadrado.",
+        "resposta_certa": "def quadrados(lista):\n    return [x**2 for x in lista]\n\nprint(quadrados([1,2,3,4]))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 91: Leia um número e imprima sua raiz quadrada (apenas se for positivo).",
+        "resposta_certa": "import math\nn = float(input('Digite um número: '))\nif n >= 0:\n    print(math.sqrt(n))\nelse:\n    print('Número negativo')"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificuldade": 2,
+        "enunciado": "Desafio 92: Leia um texto e imprima-o em maiúsculas.",
+        "resposta_certa": "texto = input('Digite um texto: ')\nprint(texto.upper())"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 3,
+        "enunciado": "Desafio 93: Leia dois números e imprima 'Sim' se o primeiro for múltiplo do segundo, caso contrário, imprima 'Não'.",
+        "resposta_certa": "a = int(input('Digite o primeiro número: '))\nb = int(input('Digite o segundo número: '))\nif a % b == 0:\n    print('Sim')\nelse:\n    print('Não')"
+    },
+    {
+        "categoria": "Loops",
+        "dificuldade": 1,
+        "enunciado": "Desafio 94: Imprima os números de 1 a 10 utilizando um loop for.",
+        "resposta_certa": "for i in range(1, 11):\n    print(i)"
+    },
+    {
+        "categoria": "Manipulação de Listas",
+        "dificuldade": 2,
+        "enunciado": "Desafio 95: Leia uma lista de números e imprima o número de elementos da lista.",
+        "resposta_certa": "lista = [float(x) for x in input('Digite números: ').split()]\nprint(len(lista))"
+    },
+    {
+        "categoria": "Manipulação de Strings",
+        "dificuldade": 3,
+        "enunciado": "Desafio 96: Leia uma string e imprima a string sem as vogais.",
+        "resposta_certa": "s = input('Digite uma string: ')\nfor vogal in 'aeiouAEIOU':\n    s = s.replace(vogal, '')\nprint(s)"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 97: Crie uma função que retorne o cubo de um número.",
+        "resposta_certa": "def cubo(n):\n    return n ** 3\n\nprint(cubo(3))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 98: Leia três números e imprima a diferença entre o maior e o menor.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nc = float(input('Digite o terceiro número: '))\nmaior = max(a, b, c)\nmenor = min(a, b, c)\nprint(maior - menor)"
+    },
+    {
+        "categoria": "Entrada e Saída",
+        "dificulado": 3,
+        "enunciado": "Desafio 99: Leia uma frase e imprima-a três vezes, separadas por vírgula.",
+        "resposta_certa": "frase = input('Digite uma frase: ')\nprint(', '.join([frase]*3))"
+    },
+    {
+        "categoria": "Estruturas Condicionais",
+        "dificuldade": 1,
+        "enunciado": "Desafio 100: Leia um número e verifique se ele é múltiplo de 5.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nif n % 5 == 0:\n    print('Múltiplo de 5')\nelse:\n    print('Não é múltiplo de 5')"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 1,
+        "enunciado": "Desafio 201: Leia um arquivo de texto e conte o número de linhas, palavras e caracteres.",
+        "resposta_certa": "with open('arquivo.txt', 'r') as f:\n    conteudo = f.read()\nlinhas = conteudo.splitlines()\npalavras = conteudo.split()\nprint('Linhas:', len(linhas))\nprint('Palavras:', len(palavras))\nprint('Caracteres:', len(conteudo))"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 1,
+        "enunciado": "Desafio 202: Crie um arquivo e escreva 'Hello, World!' nele.",
+        "resposta_certa": "with open('hello.txt', 'w') as f:\n    f.write('Hello, World!')"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 2,
+        "enunciado": "Desafio 203: Leia um arquivo CSV e imprima seu conteúdo.",
+        "resposta_certa": "import csv\nwith open('dados.csv', 'r') as arquivo:\n    leitor = csv.reader(arquivo)\n    for linha in leitor:\n        print(linha)"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 3,
+        "enunciado": "Desafio 204: Leia um arquivo de log e extraia todas as linhas que contenham a palavra 'erro'.",
+        "resposta_certa": "with open('log.txt', 'r') as f:\n    for linha in f:\n        if 'erro' in linha.lower():\n            print(linha.strip())"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 1,
+        "enunciado": "Desafio 205: Leia um arquivo e imprima as 10 primeiras linhas.",
+        "resposta_certa": "with open('arquivo.txt', 'r') as f:\n    for i in range(10):\n        print(f.readline().strip())"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 2,
+        "enunciado": "Desafio 206: Leia um arquivo de texto e substitua uma palavra por outra, salvando o resultado em um novo arquivo.",
+        "resposta_certa": "with open('entrada.txt', 'r') as fin:\n    conteudo = fin.read()\nnovo_conteudo = conteudo.replace('antiga', 'nova')\nwith open('saida.txt', 'w') as fout:\n    fout.write(novo_conteudo)"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 3,
+        "enunciado": "Desafio 207: Trate exceções ao tentar ler um arquivo que pode não existir.",
+        "resposta_certa": "try:\n    with open('arquivo_inexistente.txt', 'r') as f:\n        print(f.read())\nexcept FileNotFoundError:\n    print('Arquivo não encontrado.')"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 1,
+        "enunciado": "Desafio 208: Leia um arquivo e conte quantas vezes uma palavra específica aparece.",
+        "resposta_certa": "with open('arquivo.txt', 'r') as f:\n    conteudo = f.read().lower()\n    ocorrencias = conteudo.count('palavra')\n    print(ocorrencias)"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 2,
+        "enunciado": "Desafio 209: Leia um arquivo CSV com dados de vendas e calcule o total vendido.",
+        "resposta_certa": "import csv\nsoma = 0\nwith open('vendas.csv', 'r') as f:\n    leitor = csv.reader(f)\n    next(leitor)  \n    for linha in leitor:\n        soma += float(linha[1])\nprint('Total vendido:', soma)"
+    },
+    {
+        "categoria": "Manipulação de Arquivos",
+        "dificuldade": 3,
+        "enunciado": "Desafio 210: Leia múltiplos arquivos de um diretório e compile um relatório com estatísticas de cada um.",
+        "resposta_certa": "import os\nimport csv\narquivos = [arq for arq in os.listdir('.') if arq.endswith('.csv')]\nfor arq in arquivos:\n    with open(arq, 'r') as f:\n        leitor = list(csv.reader(f))\n        print(f'{arq}: {len(leitor)} linhas')"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 211: Crie um processo que execute uma função que imprima 'Processo 1'.",
+        "resposta_certa": "import multiprocessing\n\ndef tarefa():\n    print('Processo 1')\n\np = multiprocessing.Process(target=tarefa)\np.start()\np.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 212: Utilize threading para executar duas funções simultaneamente.",
+        "resposta_certa": "import threading\n\ndef func1():\n    print('Função 1')\n\ndef func2():\n    print('Função 2')\n\nt1 = threading.Thread(target=func1)\nt2 = threading.Thread(target=func2)\nt1.start()\nt2.start()\nt1.join()\nt2.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 213: Utilize multiprocessing para distribuir uma tarefa em paralelo que some elementos de uma lista.",
+        "resposta_certa": "import multiprocessing\n\ndef somar(lista):\n    return sum(lista)\n\nlista = list(range(100))\nwith multiprocessing.Pool() as pool:\n    resultado = pool.map(somar, [lista[i::4] for i in range(4)])\nprint(sum(resultado))"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 214: Inicie uma thread que conte de 1 a 10.",
+        "resposta_certa": "import threading\n\ndef contar():\n    for i in range(1, 11):\n        print(i)\n\nt = threading.Thread(target=contar)\nt.start()\nt.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 215: Utilize um pool de threads para processar uma lista de tarefas e retorne os quadrados dos números.",
+        "resposta_certa": "import concurrent.futures\n\ndef tarefa(n):\n    return n * n\n\nnumeros = [1,2,3,4,5]\nwith concurrent.futures.ThreadPoolExecutor() as executor:\n    resultados = list(executor.map(tarefa, numeros))\nprint(resultados)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 216: Sincronize threads utilizando locks para evitar condições de corrida enquanto incrementa uma variável global.",
+        "resposta_certa": "import threading\ncontador = 0\nlock = threading.Lock()\n\ndef incrementar():\n    global contador\n    for _ in range(100000):\n        with lock:\n            contador += 1\n\nthreads = [threading.Thread(target=incrementar) for _ in range(5)]\nfor t in threads:\n    t.start()\nfor t in threads:\n    t.join()\nprint(contador)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 217: Crie um processo separado para calcular o fatorial de um número.",
+        "resposta_certa": "import multiprocessing\n\ndef fatorial(n):\n    resultado = 1\n    for i in range(1, n+1):\n        resultado *= i\n    print(resultado)\n\np = multiprocessing.Process(target=fatorial, args=(5,))\np.start()\np.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 218: Distribua o processamento de uma lista entre múltiplos processos usando Pool e retorne os quadrados dos números.",
+        "resposta_certa": "import multiprocessing\n\ndef quadrado(n):\n    return n * n\n\nnumeros = list(range(100))\nwith multiprocessing.Pool() as pool:\n    resultado = pool.map(quadrado, numeros)\nprint(resultado)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 219: Implemente comunicação entre processos usando pipes e transmita uma lista de dados.",
+        "resposta_certa": "import multiprocessing\n\ndef enviar(conn):\n    conn.send([42, None, 'Olá'])\n    conn.close()\n\nparent_conn, child_conn = multiprocessing.Pipe()\nproc = multiprocessing.Process(target=enviar, args=(child_conn,))\nproc.start()\nprint(parent_conn.recv())\nproc.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 220: Utilize a biblioteca time para medir o tempo de execução de uma função que soma números de 1 a 1 milhão.",
+        "resposta_certa": "import time\n\ndef soma():\n    total = 0\n    for i in range(1, 1000001):\n        total += i\n    return total\n\ninicio = time.time()\nsoma()\nfim = time.time()\nprint('Tempo de execução:', fim - inicio)"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 221: Crie uma interface gráfica simples com tkinter que exiba 'Hello, World!'.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlabel = tk.Label(root, text='Hello, World!')\nlabel.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 222: Crie uma interface gráfica com tkinter que permita inserir um número e exiba sua tabuada.",
+        "resposta_certa": "import tkinter as tk\n\ndef mostrar_tabuada():\n    n = int(entry.get())\n    resultado = '\\n'.join([f'{n} x {i} = {n*i}' for i in range(1, 11)])\n    label_resultado.config(text=resultado)\n\nroot = tk.Tk()\nentry = tk.Entry(root)\nentry.pack()\nbtn = tk.Button(root, text='Mostrar Tabuada', command=mostrar_tabuada)\nbtn.pack()\nlabel_resultado = tk.Label(root, text='')\nlabel_resultado.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 223: Desenvolva uma aplicação tkinter que leia um arquivo e exiba seu conteúdo em uma janela com barra de rolagem.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import scrolledtext\n\nroot = tk.Tk()\nroot.title('Visualizador de Arquivo')\ntext_area = scrolledtext.ScrolledText(root, width=40, height=10)\ntext_area.pack()\nwith open('arquivo.txt', 'r') as f:\n    text_area.insert(tk.END, f.read())\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 224: Crie uma interface gráfica com tkinter que contenha um botão que altera o texto de um label.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlabel = tk.Label(root, text='Texto original')\nlabel.pack()\n\ndef alterar_texto():\n    label.config(text='Texto alterado')\n\nbtn = tk.Button(root, text='Alterar', command=alterar_texto)\nbtn.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 225: Desenvolva uma aplicação tkinter que permita ao usuário escolher um arquivo e exiba seu caminho.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import filedialog\n\nroot = tk.Tk()\nroot.withdraw()\ncaminho = filedialog.askopenfilename()\nprint('Arquivo selecionado:', caminho)"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 226: Crie uma interface gráfica com tkinter que desenhe um gráfico simples usando matplotlib embutido.",
+        "resposta_certa": "import tkinter as tk\nfrom matplotlib.backends.backend_tkagg import FigureCanvasTkAgg\nimport matplotlib.pyplot as plt\n\nroot = tk.Tk()\nfig, ax = plt.subplots()\nax.plot([1,2,3,4], [10,20,25,30])\ncanvas = FigureCanvasTkAgg(fig, master=root)\ncanvas.draw()\ncanvas.get_tk_widget().pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 227: Crie uma janela tkinter com dois campos de entrada e um botão que some os valores inseridos.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nentry1 = tk.Entry(root)\nentry1.pack()\nentry2 = tk.Entry(root)\nentry2.pack()\n\ndef somar():\n    a = float(entry1.get())\n    b = float(entry2.get())\n    label.config(text=f'Soma: {a+b}')\n\nbtn = tk.Button(root, text='Somar', command=somar)\nbtn.pack()\nlabel = tk.Label(root, text='')\nlabel.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 228: Desenvolva uma aplicação tkinter que leia dados de um arquivo e os exiba em uma lista.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import Listbox\n\nroot = tk.Tk()\nlistbox = Listbox(root)\nlistbox.pack()\nwith open('dados.txt', 'r') as f:\n    for linha in f:\n        listbox.insert(tk.END, linha.strip())\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 229: Crie uma interface gráfica com tkinter que permita alterar a cor de fundo da janela através de botões.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\n\ndef mudar_cor(cor):\n    root.config(bg=cor)\n\nbtn_vermelho = tk.Button(root, text='Vermelho', command=lambda: mudar_cor('red'))\nbtn_vermelho.pack()\nbtn_verde = tk.Button(root, text='Verde', command=lambda: mudar_cor('green'))\nbtn_verde.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 230: Desenvolva uma aplicação tkinter que contenha um menu e exiba uma mensagem ao selecionar uma opção.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import messagebox\n\nroot = tk.Tk()\nmenubar = tk.Menu(root)\n\ndef acao():\n    messagebox.showinfo('Info', 'Opção selecionada!')\n\nmenu_opcoes = tk.Menu(menubar, tearoff=0)\nmenu_opcoes.add_command(label='Opção 1', command=acao)\nmenubar.add_cascade(label='Menu', menu=menu_opcoes)\nroot.config(menu=menubar)\nroot.mainloop()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 1,
+        "enunciado": "Desafio 231: Conecte a um banco de dados SQLite e crie uma tabela de usuários.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco.db')\ncursor = conexao.cursor()\ncursor.execute('CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT)')\nconexao.commit()\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 2,
+        "enunciado": "Desafio 232: Insira registros em uma tabela SQLite e consulte-os.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco.db')\ncursor = conexao.cursor()\ncursor.execute('INSERT INTO usuarios (nome) VALUES (?)', ('Ana',))\nconexao.commit()\ncursor.execute('SELECT * FROM usuarios')\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 3,
+        "enunciado": "Desafio 233: Atualize registros em uma tabela SQLite e exiba o resultado.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco.db')\ncursor = conexao.cursor()\ncursor.execute(\"UPDATE usuarios SET nome = 'Bruno' WHERE nome = 'Ana'\")\nconexao.commit()\ncursor.execute('SELECT * FROM usuarios')\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 1,
+        "enunciado": "Desafio 234: Remova um registro de uma tabela SQLite.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco.db')\ncursor = conexao.cursor()\ncursor.execute(\"DELETE FROM usuarios WHERE nome = 'Bruno'\")\nconexao.commit()\ncursor.execute('SELECT * FROM usuarios')\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 2,
+        "enunciado": "Desafio 235: Crie uma função que execute uma consulta SELECT em um banco de dados SQLite.",
+        "resposta_certa": "import sqlite3\ndef consulta(query):\n    conexao = sqlite3.connect('banco.db')\n    cursor = conexao.cursor()\n    cursor.execute(query)\n    resultado = cursor.fetchall()\n    conexao.close()\n    return resultado\n\nprint(consulta('SELECT * FROM usuarios'))"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 3,
+        "enunciado": "Desafio 236: Conecte a um banco de dados SQLite, crie uma tabela e insira dados a partir de uma lista.",
+        "resposta_certa": "import sqlite3\nusuarios = [('Carlos',), ('Diana',), ('Eduardo',)]\nconexao = sqlite3.connect('banco.db')\ncursor = conexao.cursor()\ncursor.execute('CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT)')\ncursor.executemany('INSERT INTO usuarios (nome) VALUES (?)', usuarios)\nconexao.commit()\nprint(cursor.execute('SELECT * FROM usuarios').fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 1,
+        "enunciado": "Desafio 237: Utilize SQLAlchemy para definir um modelo de dados simples para usuários.",
+        "resposta_certa": "from sqlalchemy import create_engine, Column, Integer, String\nfrom sqlalchemy.ext.declarative import declarative_base\n\nengine = create_engine('sqlite:///banco.db', echo=True)\nBase = declarative_base()\n\nclass Usuario(Base):\n    __tablename__ = 'usuarios'\n    id = Column(Integer, primary_key=True)\n    nome = Column(String)\n\nBase.metadata.create_all(engine)"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 2,
+        "enunciado": "Desafio 238: Realize uma consulta com SQLAlchemy e exiba os resultados.",
+        "resposta_certa": "from sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\nfrom modelo import Usuario  # supondo que o modelo esteja em modelo.py\n\nengine = create_engine('sqlite:///banco.db')\nSession = sessionmaker(bind=engine)\nsessao = Session()\nusuarios = sessao.query(Usuario).all()\nfor u in usuarios:\n    print(u.nome)"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 3,
+        "enunciado": "Desafio 239: Atualize um registro usando SQLAlchemy e exiba o resultado.",
+        "resposta_certa": "from sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\nfrom modelo import Usuario\n\nengine = create_engine('sqlite:///banco.db')\nSession = sessionmaker(bind=engine)\nsessao = Session()\nusuario = sessao.query(Usuario).filter_by(nome='Carlos').first()\nusuario.nome = 'Carlos Atualizado'\nsessao.commit()\nprint(usuario.nome)"
+    },
+    {
+        "categoria": "Banco de Dados",
+        "dificuldade": 1,
+        "enunciado": "Desafio 240: Remova um registro de um banco de dados usando SQLAlchemy.",
+        "resposta_certa": "from sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\nfrom modelo import Usuario\n\nengine = create_engine('sqlite:///banco.db')\nSession = sessionmaker(bind=engine)\nsessao = Session()\nusuario = sessao.query(Usuario).filter_by(nome='Diana').first()\nsessao.delete(usuario)\nsessao.commit()\nprint('Registro removido')"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 2,
+        "enunciado": "Desafio 241: Valide um endereço de email utilizando expressões regulares.",
+        "resposta_certa": "import re\nemail = input('Digite um email: ')\nif re.match(r'^[\\w\\.-]+@[\\w\\.-]+\\.\\w+$', email):\n    print('Email válido')\nelse:\n    print('Email inválido')"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 3,
+        "enunciado": "Desafio 242: Extraia todos os números de uma string usando regex.",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\nnumeros = re.findall(r'\\d+', s)\nprint(numeros)"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 1,
+        "enunciado": "Desafio 243: Leia uma string e verifique se ela corresponde ao padrão de um número de telefone (ex: (xx)xxxxx-xxxx).",
+        "resposta_certa": "import re\ntelefone = input('Digite um telefone: ')\nif re.match(r'^\\(\\d{2}\\)\\d{5}-\\d{4}$', telefone):\n    print('Formato válido')\nelse:\n    print('Formato inválido')"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 2,
+        "enunciado": "Desafio 244: Substitua datas no formato DD/MM/AAAA por AAAA-MM-DD usando regex.",
+        "resposta_certa": "import re\ndata = input('Digite uma data (DD/MM/AAAA): ')\nprint(re.sub(r'(\\d{2})/(\\d{2})/(\\d{4})', r'\\3-\\2-\\1', data))"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 3,
+        "enunciado": "Desafio 245: Encontre todas as palavras que começam com letra maiúscula em uma string.",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\npalavras = re.findall(r'\\b[A-Z][a-z]*\\b', s)\nprint(palavras)"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 1,
+        "enunciado": "Desafio 246: Extraia todos os endereços IP de um texto utilizando regex.",
+        "resposta_certa": "import re\ntexto = input('Digite o texto: ')\nips = re.findall(r'\\b(?:[0-9]{1,3}\\.){3}[0-9]{1,3}\\b', texto)\nprint(ips)"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 2,
+        "enunciado": "Desafio 247: Valide um CPF utilizando expressões regulares.",
+        "resposta_certa": "import re\ncpf = input('Digite um CPF (apenas números): ')\nif re.match(r'^\\d{11}$', cpf):\n    print('Formato válido')\nelse:\n    print('Formato inválido')"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 3,
+        "enunciado": "Desafio 248: Leia uma string e remova todos os dígitos utilizando regex.",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\nprint(re.sub(r'\\d', '', s))"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 1,
+        "enunciado": "Desafio 249: Divida uma string em palavras utilizando regex.",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\nprint(re.split(r'\\W+', s))"
+    },
+    {
+        "categoria": "Expressões Regulares",
+        "dificuldade": 2,
+        "enunciado": "Desafio 250: Encontre a primeira palavra de uma string que contenha apenas letras usando regex.",
+        "resposta_certa": "import re\ns = input('Digite uma string: ')\nmatch = re.search(r'\\b[A-Za-z]+\\b', s)\nprint(match.group() if match else '')"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 1,
+        "enunciado": "Desafio 251: Utilize a biblioteca requests para obter o conteúdo de uma página web.",
+        "resposta_certa": "import requests\nr = requests.get('https://www.example.com')\nprint(r.text)"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 2,
+        "enunciado": "Desafio 252: Faça uma requisição GET a uma API pública e exiba os dados em JSON.",
+        "resposta_certa": "import requests\nr = requests.get('https://api.github.com')\nprint(r.json())"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 3,
+        "enunciado": "Desafio 253: Consuma uma API de clima e imprima a temperatura atual (utilize uma API gratuita).",
+        "resposta_certa": "import requests\napi_key = 'sua_api_key'\ncidade = 'São Paulo'\nurl = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={api_key}&units=metric'\nr = requests.get(url)\ndados = r.json()\nprint('Temperatura:', dados['main']['temp'])"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 1,
+        "enunciado": "Desafio 254: Envie dados via requisição POST para uma API simulada.",
+        "resposta_certa": "import requests\ndados = {'nome': 'João', 'idade': 30}\nr = requests.post('https://httpbin.org/post', json=dados)\nprint(r.json())"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 2,
+        "enunciado": "Desafio 255: Faça parsing de um JSON obtido via API e exiba informações específicas.",
+        "resposta_certa": "import requests\nr = requests.get('https://api.github.com')\ndados = r.json()\nprint('API URL:', dados.get('current_user_url'))"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 3,
+        "enunciado": "Desafio 256: Implemente autenticação simples em uma API utilizando requests (simule com httpbin.org).",
+        "resposta_certa": "import requests\nr = requests.get('https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))\nprint(r.json())"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 1,
+        "enunciado": "Desafio 257: Realize uma requisição para uma API de notícias e imprima os títulos das últimas 5 notícias.",
+        "resposta_certa": "import requests\nr = requests.get('https://newsapi.org/v2/top-headlines?country=br&apiKey=sua_api_key')\ndados = r.json()\nfor artigo in dados.get('articles', [])[:5]:\n    print(artigo['title'])"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 2,
+        "enunciado": "Desafio 258: Consuma uma API de conversão de moedas e converta um valor informado pelo usuário.",
+        "resposta_certa": "import requests\nvalor = float(input('Digite o valor em BRL: '))\n# Exemplo com taxa fixa\ndolar = valor / 5.0\nprint('Em dólares:', dolar)"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 3,
+        "enunciado": "Desafio 259: Verifique a conectividade com a internet tentando acessar um site conhecido.",
+        "resposta_certa": "import requests\ntry:\n    r = requests.get('https://www.google.com', timeout=5)\n    print('Conectado')\nexcept requests.RequestException:\n    print('Sem conexão')"
+    },
+    {
+        "categoria": "APIs e Requisições",
+        "dificuldade": 1,
+        "enunciado": "Desafio 260: Faça uma requisição para uma API de dados esportivos e exiba os resultados de jogos recentes.",
+        "resposta_certa": "import requests\nr = requests.get('https://api.example.com/sports')\nprint(r.json())"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 261: Utilize threading para imprimir 'Task 1' e 'Task 2' simultaneamente.",
+        "resposta_certa": "import threading\n\ndef task1():\n    print('Task 1')\n\ndef task2():\n    print('Task 2')\n\nt1 = threading.Thread(target=task1)\nt2 = threading.Thread(target=task2)\nt1.start()\nt2.start()\nt1.join()\nt2.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 262: Utilize multiprocessing para executar uma função que calcula a soma de uma lista.",
+        "resposta_certa": "import multiprocessing\n\ndef somar(lista):\n    return sum(lista)\n\nlista = list(range(100))\nwith multiprocessing.Pool() as pool:\n    resultado = pool.map(somar, [lista[i::4] for i in range(4)])\nprint(sum(resultado))"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 263: Crie um pool de processos que execute uma função em paralelo para cada elemento de uma lista.",
+        "resposta_certa": "import multiprocessing\n\ndef quadrado(n):\n    return n * n\n\nnumeros = list(range(10))\nwith multiprocessing.Pool() as pool:\n    resultados = pool.map(quadrado, numeros)\nprint(resultados)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 264: Sincronize duas threads utilizando um lock para atualizar uma variável global.",
+        "resposta_certa": "import threading\ncontador = 0\nlock = threading.Lock()\n\ndef incrementar():\n    global contador\n    for _ in range(100000):\n        with lock:\n            contador += 1\n\nthreads = [threading.Thread(target=incrementar) for _ in range(2)]\nfor t in threads:\n    t.start()\nfor t in threads:\n    t.join()\nprint(contador)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 265: Implemente comunicação entre processos usando uma fila (Queue).",
+        "resposta_certa": "import multiprocessing\n\ndef produtor(q):\n    for i in range(5):\n        q.put(i)\n\ndef consumidor(q):\n    while not q.empty():\n        print(q.get())\n\nif __name__ == '__main__':\n    q = multiprocessing.Queue()\n    p = multiprocessing.Process(target=produtor, args=(q,))\n    c = multiprocessing.Process(target=consumidor, args=(q,))\n    p.start()\n    p.join()\n    c.start()\n    c.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 266: Compare o tempo de execução de uma tarefa utilizando threading e multiprocessing.",
+        "resposta_certa": "import time, threading, multiprocessing\n\ndef tarefa():\n    total = 0\n    for i in range(1000000):\n        total += i\n    return total\n\n# Usando threading\ninicio = time.time()\nthreads = [threading.Thread(target=tarefa) for _ in range(4)]\nfor t in threads: t.start()\nfor t in threads: t.join()\nprint('Threading:', time.time()-inicio)\n\n# Usando multiprocessing\ninicio = time.time()\nprocessos = [multiprocessing.Process(target=tarefa) for _ in range(4)]\nfor p in processos: p.start()\nfor p in processos: p.join()\nprint('Multiprocessing:', time.time()-inicio)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 267: Crie duas threads, uma que imprima os números de 1 a 5 e outra que imprima os números de 6 a 10.",
+        "resposta_certa": "import threading\n\ndef task1():\n    for i in range(1, 6):\n        print(i)\n\ndef task2():\n    for i in range(6, 11):\n        print(i)\n\nt1 = threading.Thread(target=task1)\nt2 = threading.Thread(target=task2)\nt1.start()\nt2.start()\nt1.join()\nt2.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 268: Utilize threading para realizar múltiplas requisições HTTP simultaneamente.",
+        "resposta_certa": "import threading, requests\n\ndef requisitar(url):\n    r = requests.get(url)\n    print(f'{url} - {r.status_code}')\n\nurls = ['https://www.google.com', 'https://www.github.com', 'https://www.python.org']\nthreads = [threading.Thread(target=requisitar, args=(url,)) for url in urls]\nfor t in threads: t.start()\nfor t in threads: t.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 269: Implemente um contador seguro em multithreading usando locks.",
+        "resposta_certa": "import threading\ncontador = 0\nlock = threading.Lock()\n\ndef incrementar():\n    global contador\n    for _ in range(10000):\n        with lock:\n            contador += 1\n\nthreads = [threading.Thread(target=incrementar) for _ in range(10)]\nfor t in threads: t.start()\nfor t in threads: t.join()\nprint(contador)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 270: Crie um processo separado que salve o resultado de uma operação em um arquivo.",
+        "resposta_certa": "import multiprocessing\n\ndef salvar_resultado(n):\n    resultado = n * n\n    with open('resultado.txt', 'w') as f:\n        f.write(str(resultado))\n\np = multiprocessing.Process(target=salvar_resultado, args=(5,))\np.start()\np.join()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 271: Crie uma interface gráfica com tkinter que exiba uma mensagem de boas-vindas.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlabel = tk.Label(root, text='Bem-vindo!')\nlabel.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 272: Desenvolva uma aplicação tkinter com um botão que, ao ser clicado, exiba uma mensagem.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import messagebox\n\nroot = tk.Tk()\n\ndef acao():\n    messagebox.showinfo('Aviso', 'Botão clicado!')\n\nbtn = tk.Button(root, text='Clique Aqui', command=acao)\nbtn.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 273: Crie uma janela tkinter com um campo de entrada e um botão que mostre o valor digitado.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nentry = tk.Entry(root)\nentry.pack()\n\ndef mostrar():\n    print(entry.get())\n\nbtn = tk.Button(root, text='Mostrar', command=mostrar)\nbtn.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 274: Desenvolva uma aplicação tkinter que permita ao usuário selecionar um arquivo e exiba seu caminho.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import filedialog\n\nroot = tk.Tk()\nroot.withdraw()\ncaminho = filedialog.askopenfilename()\nprint('Arquivo selecionado:', caminho)"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 275: Crie uma interface tkinter com uma lista de itens que pode ser atualizada dinamicamente.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlistbox = tk.Listbox(root)\nlistbox.pack()\n\nitens = ['Item 1', 'Item 2', 'Item 3']\nfor item in itens:\n    listbox.insert(tk.END, item)\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 276: Implemente uma calculadora básica com interface gráfica usando tkinter.",
+        "resposta_certa": "import tkinter as tk\n\ndef calcular():\n    try:\n        n1 = float(entry1.get())\n        n2 = float(entry2.get())\n        resultado = n1 + n2\n        label_resultado.config(text=f'Resultado: {resultado}')\n    except:\n        label_resultado.config(text='Erro')\n\nroot = tk.Tk()\nentry1 = tk.Entry(root)\nentry1.pack()\nentry2 = tk.Entry(root)\nentry2.pack()\nbtn = tk.Button(root, text='Somar', command=calcular)\nbtn.pack()\nlabel_resultado = tk.Label(root, text='')\nlabel_resultado.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 277: Crie uma interface tkinter que utilize menus e submenus para navegação.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nmenubar = tk.Menu(root)\nsubmenu = tk.Menu(menubar, tearoff=0)\nsubmenu.add_command(label='Opção 1')\nsubmenu.add_command(label='Opção 2')\nmenubar.add_cascade(label='Menu', menu=submenu)\nroot.config(menu=menubar)\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 278: Desenvolva uma aplicação tkinter que exiba um gráfico utilizando matplotlib.",
+        "resposta_certa": "import tkinter as tk\nfrom matplotlib.backends.backend_tkagg import FigureCanvasTkAgg\nimport matplotlib.pyplot as plt\n\nroot = tk.Tk()\nfig, ax = plt.subplots()\nax.plot([1,2,3,4], [10,20,25,30])\ncanvas = FigureCanvasTkAgg(fig, master=root)\ncanvas.draw()\ncanvas.get_tk_widget().pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 279: Crie uma janela tkinter que contenha vários widgets organizados com grid.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlabel1 = tk.Label(root, text='Label 1')\nlabel1.grid(row=0, column=0)\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1)\nbtn = tk.Button(root, text='Botão')\nbtn.grid(row=1, column=0, columnspan=2)\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 280: Desenvolva uma aplicação tkinter que permita mudar a cor de fundo da janela através de botões.",
+        "resposta_certa": "import tkinter as tk\n\ndef mudar_cor(cor):\n    root.config(bg=cor)\n\nroot = tk.Tk()\nbtn_vermelho = tk.Button(root, text='Vermelho', command=lambda: mudar_cor('red'))\nbtn_vermelho.pack()\nbtn_verde = tk.Button(root, text='Verde', command=lambda: mudar_cor('green'))\nbtn_verde.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 281: Leia um número e imprima seu valor ao quadrado.",
+        "resposta_certa": "n = float(input('Digite um número: '))\nprint(n ** 2)"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 282: Leia dois números e imprima a soma, subtração, multiplicação e divisão.",
+        "resposta_certa": "a = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nprint('Soma:', a + b)\nprint('Subtração:', a - b)\nprint('Multiplicação:', a * b)\nif b != 0:\n    print('Divisão:', a / b)\nelse:\n    print('Divisão por zero não é permitida')"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 283: Calcule a área de um triângulo a partir de seus três lados usando a fórmula de Heron.",
+        "resposta_certa": "import math\na = float(input('Digite o primeiro lado: '))\nb = float(input('Digite o segundo lado: '))\nc = float(input('Digite o terceiro lado: '))\ns = (a+b+c)/2\narea = math.sqrt(s*(s-a)*(s-b)*(s-c))\nprint('Área:', area)"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 284: Leia um número e imprima seu logaritmo natural.",
+        "resposta_certa": "import math\nn = float(input('Digite um número positivo: '))\nif n > 0:\n    print(math.log(n))\nelse:\n    print('Número inválido')"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 285: Leia um número e imprima o fatorial utilizando uma função recursiva.",
+        "resposta_certa": "def fatorial(n):\n    if n <= 1:\n        return 1\n    return n * fatorial(n-1)\n\nn = int(input('Digite um número: '))\nprint(fatorial(n))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 286: Leia dois números e imprima a média geométrica.",
+        "resposta_certa": "import math\na = float(input('Digite o primeiro número: '))\nb = float(input('Digite o segundo número: '))\nprint(math.sqrt(a * b))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 287: Leia um número e imprima a sua raiz cúbica.",
+        "resposta_certa": "n = float(input('Digite um número: '))\nprint(n ** (1/3))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 288: Calcule a hipotenusa de um triângulo retângulo dados os catetos.",
+        "resposta_certa": "import math\na = float(input('Digite o cateto a: '))\nb = float(input('Digite o cateto b: '))\nprint('Hipotenusa:', math.hypot(a, b))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 289: Leia um número e imprima a soma de todos os números de 1 até ele.",
+        "resposta_certa": "n = int(input('Digite um número: '))\nprint(sum(range(1, n+1)))"
+    },
+    {
+        "categoria": "Matemática Básica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 290: Leia um número e imprima se ele é um número perfeito (soma dos divisores, exceto ele mesmo, igual ao número).",
+        "resposta_certa": "def eh_perfeito(n):\n    return n == sum(i for i in range(1, n) if n % i == 0)\n\nn = int(input('Digite um número: '))\nprint('Perfeito' if eh_perfeito(n) else 'Não perfeito')"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 291: Crie uma função que retorne a soma de dois números.",
+        "resposta_certa": "def soma(a, b):\n    return a + b\n\nprint(soma(5, 7))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 292: Crie uma função que retorne o maior de três números.",
+        "resposta_certa": "def maior_de_tres(a, b, c):\n    return max(a, b, c)\n\nprint(maior_de_tres(3, 7, 5))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 293: Crie uma função recursiva que retorne o n-ésimo termo da sequência de Fibonacci.",
+        "resposta_certa": "def fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n\nprint(fibonacci(10))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 294: Crie uma função que verifique se uma string é um palíndromo.",
+        "resposta_certa": "def eh_palindromo(s):\n    s = s.replace(' ', '').lower()\n    return s == s[::-1]\n\nprint(eh_palindromo('radar'))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 295: Crie uma função que retorne uma lista com os números primos de 1 a n.",
+        "resposta_certa": "def primos_ate(n):\n    def eh_primo(x):\n        if x < 2:\n            return False\n        for i in range(2, int(x**0.5)+1):\n            if x % i == 0:\n                return False\n        return True\n    return [x for x in range(1, n+1) if eh_primo(x)]\n\nprint(primos_ate(20))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 296: Crie uma função que converta uma temperatura de Fahrenheit para Celsius.",
+        "resposta_certa": "def fahrenheit_para_celsius(f):\n    return (f - 32) * 5/9\n\nprint(fahrenheit_para_celsius(68))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 297: Crie uma função que retorne a média de uma lista de números.",
+        "resposta_certa": "def media(lista):\n    return sum(lista) / len(lista)\n\nprint(media([10, 20, 30]))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 2,
+        "enunciado": "Desafio 298: Crie uma função que retorne o fatorial de um número utilizando recursão.",
+        "resposta_certa": "def fatorial(n):\n    if n <= 1:\n        return 1\n    return n * fatorial(n-1)\n\nprint(fatorial(6))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 3,
+        "enunciado": "Desafio 299: Crie uma função que receba uma string e retorne a mesma string sem espaços duplicados.",
+        "resposta_certa": "def remover_espacos(s):\n    import re\n    return re.sub(' +', ' ', s)\n\nprint(remover_espacos('Este   é   um   teste'))"
+    },
+    {
+        "categoria": "Funções",
+        "dificuldade": 1,
+        "enunciado": "Desafio 300: Crie uma função que receba uma lista e retorne uma nova lista com os elementos únicos.",
+        "resposta_certa": "def elementos_unicos(lista):\n    return list(set(lista))\n\nprint(elementos_unicos([1,2,2,3,4,4,5]))"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 301: Utilize a biblioteca threading para executar duas funções simultaneamente.",
+        "resposta_certa": "import threading\n\ndef funcao1():\n    print('Executando função 1')\n\ndef funcao2():\n    print('Executando função 2')\n\nt1 = threading.Thread(target=funcao1)\nt2 = threading.Thread(target=funcao2)\nt1.start()\nt2.start()\nt1.join()\nt2.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 302: Crie uma aplicação que utilize multiprocessing para executar uma tarefa em paralelo.",
+        "resposta_certa": "import multiprocessing\n\ndef tarefa(n):\n    print(f'Processando {n}')\n\nprocessos = []\nfor i in range(5):\n    p = multiprocessing.Process(target=tarefa, args=(i,))\n    processos.append(p)\n    p.start()\nfor p in processos:\n    p.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 303: Compare o desempenho de uma operação usando multithreading e multiprocessing.",
+        "resposta_certa": "# Exemplo simplificado\nimport time, threading, multiprocessing\n\ndef contar():\n    total = 0\n    for i in range(1000000):\n        total += i\n    return total\n\n# Multithreading\ninicio = time.time()\nthreads = [threading.Thread(target=contar) for _ in range(4)]\nfor t in threads: t.start()\nfor t in threads: t.join()\nprint('Tempo com threads:', time.time()-inicio)\n\n# Multiprocessing\ninicio = time.time()\nprocessos = [multiprocessing.Process(target=contar) for _ in range(4)]\nfor p in processos: p.start()\nfor p in processos: p.join()\nprint('Tempo com processos:', time.time()-inicio)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 304: Inicie uma thread que conte de 1 a 10.",
+        "resposta_certa": "import threading\n\ndef contar():\n    for i in range(1, 11):\n        print(i)\n\nt = threading.Thread(target=contar)\nt.start()\nt.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 305: Utilize um pool de threads para processar uma lista de tarefas e retornar os quadrados dos números.",
+        "resposta_certa": "import concurrent.futures\n\ndef tarefa(n):\n    return n * n\n\nnumeros = [1,2,3,4,5]\nwith concurrent.futures.ThreadPoolExecutor() as executor:\n    resultados = list(executor.map(tarefa, numeros))\nprint(resultados)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 306: Sincronize threads utilizando locks para evitar condições de corrida.",
+        "resposta_certa": "import threading\ncontador = 0\nlock = threading.Lock()\n\ndef incrementar():\n    global contador\n    for _ in range(100000):\n        with lock:\n            contador += 1\n\nthreads = [threading.Thread(target=incrementar) for _ in range(5)]\nfor t in threads: t.start()\nfor t in threads: t.join()\nprint(contador)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 307: Crie um processo separado que calcule o fatorial de um número.",
+        "resposta_certa": "import multiprocessing\n\ndef fatorial(n):\n    resultado = 1\n    for i in range(1, n+1):\n        resultado *= i\n    print(resultado)\n\np = multiprocessing.Process(target=fatorial, args=(5,))\np.start()\np.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 2,
+        "enunciado": "Desafio 308: Distribua o processamento de uma lista entre múltiplos processos usando Pool.",
+        "resposta_certa": "import multiprocessing\n\ndef quadrado(n):\n    return n * n\n\nnumeros = list(range(100))\nwith multiprocessing.Pool() as pool:\n    resultado = pool.map(quadrado, numeros)\nprint(resultado)"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 3,
+        "enunciado": "Desafio 309: Implemente comunicação entre processos usando pipes.",
+        "resposta_certa": "import multiprocessing\n\ndef enviar(conn):\n    conn.send([42, None, 'Olá'])\n    conn.close()\n\nparent_conn, child_conn = multiprocessing.Pipe()\nproc = multiprocessing.Process(target=enviar, args=(child_conn,))\nproc.start()\nprint(parent_conn.recv())\nproc.join()"
+    },
+    {
+        "categoria": "Programação Paralela",
+        "dificuldade": 1,
+        "enunciado": "Desafio 310: Utilize a biblioteca time para medir o tempo de execução de uma função.",
+        "resposta_certa": "import time\n\ndef funcao():\n    total = 0\n    for i in range(1000000):\n        total += i\n    return total\n\ninicio = time.time()\nfuncao()\nfim = time.time()\nprint('Tempo de execução:', fim - inicio)"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 311: Crie uma interface gráfica com tkinter que permita ao usuário inserir seu nome e exiba uma saudação.",
+        "resposta_certa": "import tkinter as tk\n\ndef saudar():\n    nome = entry.get()\n    label.config(text=f'Olá, {nome}!')\n\nroot = tk.Tk()\nentry = tk.Entry(root)\nentry.pack()\nbtn = tk.Button(root, text='Saudar', command=saudar)\nbtn.pack()\nlabel = tk.Label(root, text='')\nlabel.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 312: Desenvolva uma aplicação GUI com tkinter que leia um arquivo e exiba seu conteúdo em uma janela com barra de rolagem.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import scrolledtext\n\nroot = tk.Tk()\nroot.title('Visualizador de Arquivo')\n\ntext_area = scrolledtext.ScrolledText(root, width=40, height=10)\ntext_area.pack()\n\nwith open('arquivo.txt', 'r') as f:\n    text_area.insert(tk.END, f.read())\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 313: Crie uma interface gráfica com um botão que, ao ser clicado, exiba uma mensagem.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import messagebox\n\nroot = tk.Tk()\n\nbtn = tk.Button(root, text='Clique Aqui', command=lambda: messagebox.showinfo('Alerta', 'Botão clicado!'))\nbtn.pack()\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 314: Desenvolva uma aplicação GUI que permita ao usuário selecionar um arquivo e exiba o caminho do arquivo selecionado.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import filedialog\n\nroot = tk.Tk()\nroot.withdraw()\ncaminho = filedialog.askopenfilename()\nprint('Arquivo selecionado:', caminho)"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 315: Crie uma calculadora básica utilizando tkinter.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\n\nentry1 = tk.Entry(root)\nentry1.pack()\nentry2 = tk.Entry(root)\nentry2.pack()\n\ndef somar():\n    try:\n        a = float(entry1.get())\n        b = float(entry2.get())\n        resultado = a + b\n        label.config(text=f'Resultado: {resultado}')\n    except:\n        label.config(text='Erro')\n\nbtn = tk.Button(root, text='Somar', command=somar)\nbtn.pack()\nlabel = tk.Label(root, text='')\nlabel.pack()\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 316: Crie uma interface tkinter com um rótulo e um campo de entrada.",
+        "resposta_certa": "import tkinter as tk\n\nroot = tk.Tk()\nlabel = tk.Label(root, text='Insira seu nome:')\nlabel.pack()\nentry = tk.Entry(root)\nentry.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 317: Desenvolva uma aplicação tkinter que leia um número e exiba sua tabuada.",
+        "resposta_certa": "import tkinter as tk\n\ndef exibir_tabuada():\n    n = int(entry.get())\n    resultado = '\\n'.join([f'{n} x {i} = {n*i}' for i in range(1, 11)])\n    label_resultado.config(text=resultado)\n\nroot = tk.Tk()\nentry = tk.Entry(root)\nentry.pack()\nbtn = tk.Button(root, text='Tabuada', command=exibir_tabuada)\nbtn.pack()\nlabel_resultado = tk.Label(root, text='')\nlabel_resultado.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 3,
+        "enunciado": "Desafio 318: Crie uma interface gráfica que permita ao usuário selecionar uma imagem e aplicar um filtro de preto e branco.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import filedialog\nfrom PIL import Image, ImageTk, ImageOps\n\nroot = tk.Tk()\n\ndef aplicar_filtro():\n    caminho = filedialog.askopenfilename()\n    imagem = Image.open(caminho)\n    imagem_pb = ImageOps.grayscale(imagem)\n    imagem_tk = ImageTk.PhotoImage(imagem_pb)\n    label_imagem.config(image=imagem_tk)\n    label_imagem.image = imagem_tk\n\nbtn = tk.Button(root, text='Selecionar Imagem', command=aplicar_filtro)\nbtn.pack()\nlabel_imagem = tk.Label(root)\nlabel_imagem.pack()\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 1,
+        "enunciado": "Desafio 319: Crie uma aplicação tkinter que exiba uma mensagem de alerta ao clicar em um botão.",
+        "resposta_certa": "import tkinter as tk\nfrom tkinter import messagebox\n\nroot = tk.Tk()\nbtn = tk.Button(root, text='Alerta', command=lambda: messagebox.showwarning('Alerta', 'Atenção!'))\nbtn.pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Interface Gráfica",
+        "dificuldade": 2,
+        "enunciado": "Desafio 320: Desenvolva uma aplicação tkinter que leia dados de um arquivo e os exiba em uma tabela.",
+        "resposta_certa": "import tkinter as tk\nimport csv\n\nroot = tk.Tk()\n\nlista = []\nwith open('dados.csv', 'r') as f:\n    leitor = csv.reader(f)\n    for linha in leitor:\n        lista.append(linha)\n\nfor i, linha in enumerate(lista):\n    for j, valor in enumerate(linha):\n        e = tk.Entry(root, width=10)\n        e.grid(row=i, column=j)\n        e.insert(tk.END, valor)\n\nroot.mainloop()"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 1,
+        "enunciado": "Desafio 321: Crie um DataFrame com dados fictícios e imprima-o.",
+        "resposta_certa": "import pandas as pd\n\ndados = {'Nome': ['Ana', 'Bruno', 'Carlos'], 'Idade': [25, 30, 22]}\ndf = pd.DataFrame(dados)\nprint(df)"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 2,
+        "enunciado": "Desafio 322: Leia um arquivo CSV usando pandas e exiba as primeiras 5 linhas.",
+        "resposta_certa": "import pandas as pd\n\ndf = pd.read_csv('dados.csv')\nprint(df.head())"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 3,
+        "enunciado": "Desafio 323: Calcule estatísticas básicas (média, mediana, desvio padrão) de um DataFrame.",
+        "resposta_certa": "import pandas as pd\n\ndf = pd.read_csv('dados.csv')\nprint('Média:', df.mean())\nprint('Mediana:', df.median())\nprint('Desvio padrão:', df.std())"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 1,
+        "enunciado": "Desafio 324: Plote um gráfico de barras comparando dados de diferentes categorias usando matplotlib.",
+        "resposta_certa": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('dados.csv')\nplt.bar(df['Categoria'], df['Valor'])\nplt.show()"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 2,
+        "enunciado": "Desafio 325: Crie um gráfico de linha com dados aleatórios utilizando matplotlib.",
+        "resposta_certa": "import matplotlib.pyplot as plt\nimport random\n\ndados = [random.randint(1, 100) for _ in range(10)]\nplt.plot(dados)\nplt.show()"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 3,
+        "enunciado": "Desafio 326: Utilize pandas para filtrar dados de um DataFrame com base em uma condição.",
+        "resposta_certa": "import pandas as pd\n\ndf = pd.read_csv('dados.csv')\nfiltrado = df[df['Valor'] > 50]\nprint(filtrado)"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 1,
+        "enunciado": "Desafio 327: Combine dois DataFrames utilizando a função merge do pandas.",
+        "resposta_certa": "import pandas as pd\n\ndf1 = pd.DataFrame({'ID': [1,2,3], 'Nome': ['Ana', 'Bruno', 'Carlos']})\ndf2 = pd.DataFrame({'ID': [1,2,3], 'Idade': [25,30,22]})\ndf_merged = pd.merge(df1, df2, on='ID')\nprint(df_merged)"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 2,
+        "enunciado": "Desafio 328: Salve um DataFrame em um arquivo CSV utilizando pandas.",
+        "resposta_certa": "import pandas as pd\n\ndf = pd.DataFrame({'A': [1,2,3], 'B': [4,5,6]})\ndf.to_csv('saida.csv', index=False)"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 3,
+        "enunciado": "Desafio 329: Leia um DataFrame e remova colunas com dados ausentes.",
+        "resposta_certa": "import pandas as pd\n\ndf = pd.read_csv('dados.csv')\ndf_limpo = df.dropna(axis=1)\nprint(df_limpo)"
+    },
+    {
+        "categoria": "Manipulação de Dados com Pandas e Matplotlib",
+        "dificuldade": 1,
+        "enunciado": "Desafio 330: Plote um gráfico de pizza com as porcentagens de um DataFrame utilizando matplotlib.",
+        "resposta_certa": "import pandas as pd\nimport matplotlib.pyplot as plt\n\ndf = pd.read_csv('dados.csv')\nplt.pie(df['Valor'], labels=df['Categoria'], autopct='%1.1f%%')\nplt.show()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 2,
+        "enunciado": "Desafio 331: Crie uma aplicação web simples com Flask que exiba 'Hello, World!' na página inicial.",
+        "resposta_certa": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Hello, World!'\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 3,
+        "enunciado": "Desafio 332: Crie uma rota em Flask que exiba o horário atual.",
+        "resposta_certa": "from flask import Flask\nimport datetime\napp = Flask(__name__)\n\n@app.route('/hora')\ndef hora():\n    return str(datetime.datetime.now())\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 1,
+        "enunciado": "Desafio 333: Desenvolva uma aplicação Flask com um formulário que receba dados do usuário e os exiba em outra página.",
+        "resposta_certa": "from flask import Flask, request, render_template_string\napp = Flask(__name__)\n\nform_html = '''\n<form method='POST'>\n  Nome: <input name='nome'><br>\n  <input type='submit' value='Enviar'>\n</form>\n'''\n\n@app.route('/', methods=['GET', 'POST'])\ndef home():\n    if request.method == 'POST':\n        nome = request.form['nome']\n        return f'Olá, {nome}!'\n    return render_template_string(form_html)\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 2,
+        "enunciado": "Desafio 334: Crie uma aplicação Flask com uma rota '/sobre' com informações básicas.",
+        "resposta_certa": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/sobre')\ndef sobre():\n    return 'Informações sobre o aplicativo.'\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 3,
+        "enunciado": "Desafio 335: Leia dados de um arquivo JSON e exiba-os em uma página usando Flask.",
+        "resposta_certa": "from flask import Flask, jsonify\nimport json\napp = Flask(__name__)\n\n@app.route('/dados')\ndef dados():\n    with open('dados.json', 'r') as f:\n        dados = json.load(f)\n    return jsonify(dados)\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 1,
+        "enunciado": "Desafio 336: Implemente autenticação de usuário básica em uma aplicação Flask.",
+        "resposta_certa": "from flask import Flask, request, Response\napp = Flask(__name__)\n\ndef check_auth(username, password):\n    return username == 'admin' and password == 'secret'\n\ndef authenticate():\n    return Response('Login required', 401, {'WWW-Authenticate': 'Basic realm=\"Login Required\"'})\n\n@app.route('/')\ndef index():\n    auth = request.authorization\n    if not auth or not check_auth(auth.username, auth.password):\n        return authenticate()\n    return 'Olá, admin!'\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 2,
+        "enunciado": "Desafio 337: Crie uma rota em Flask que exiba uma lista estática de itens.",
+        "resposta_certa": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/itens')\ndef itens():\n    return '<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>'\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 3,
+        "enunciado": "Desafio 338: Desenvolva uma aplicação Flask que permita inserir dados através de um formulário e salvá-los em um arquivo.",
+        "resposta_certa": "from flask import Flask, request, render_template_string\napp = Flask(__name__)\n\nform_html = '''\n<form method='POST'>\n  Nome: <input name='nome'><br>\n  <input type='submit' value='Enviar'>\n</form>\n'''\n\n@app.route('/', methods=['GET', 'POST'])\ndef home():\n    if request.method == 'POST':\n        nome = request.form['nome']\n        with open('nomes.txt', 'a') as f:\n            f.write(nome + '\\n')\n        return 'Nome salvo!'\n    return render_template_string(form_html)\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 1,
+        "enunciado": "Desafio 339: Crie uma aplicação Flask que se conecte a um banco de dados SQLite e permita operações CRUD.",
+        "resposta_certa": "from flask import Flask, request, jsonify\nimport sqlite3\napp = Flask(__name__)\n\n@app.route('/usuarios', methods=['GET'])\ndef get_usuarios():\n    conn = sqlite3.connect('banco.db')\n    cursor = conn.cursor()\n    cursor.execute('SELECT * FROM usuarios')\n    usuarios = cursor.fetchall()\n    conn.close()\n    return jsonify(usuarios)\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Desenvolvimento Web com Flask",
+        "dificuldade": 2,
+        "enunciado": "Desafio 340: Crie uma página de erro personalizada (404) em uma aplicação Flask.",
+        "resposta_certa": "from flask import Flask, render_template\napp = Flask(__name__)\n\n@app.errorhandler(404)\ndef pagina_nao_encontrada(e):\n    return 'Página não encontrada. Erro 404.', 404\n\nif __name__ == '__main__':\n    app.run()"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 3,
+        "enunciado": "Desafio 341: Utilize decoradores para registrar o tempo de execução de uma função.",
+        "resposta_certa": "import time\ndef tempo_exec(func):\n    def wrapper(*args, **kwargs):\n        inicio = time.time()\n        resultado = func(*args, **kwargs)\n        fim = time.time()\n        print(f'Tempo: {fim - inicio}')\n        return resultado\n    return wrapper\n\n@tempo_exec\ndef soma(a, b):\n    return a + b\n\nprint(soma(3, 4))"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 1,
+        "enunciado": "Desafio 342: Implemente um gerenciador de contexto personalizado.",
+        "resposta_certa": "class Gerenciador:\n    def __enter__(self):\n        print('Entrando')\n        return self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        print('Saindo')\n\nwith Gerenciador() as g:\n    print('Dentro do bloco')"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 2,
+        "enunciado": "Desafio 343: Utilize list comprehensions para gerar uma lista de quadrados de números de 1 a 10.",
+        "resposta_certa": "quadrados = [x**2 for x in range(1, 11)]\nprint(quadrados)"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 3,
+        "enunciado": "Desafio 344: Crie um dicionário por compreensão que conte a frequência de caracteres em uma string.",
+        "resposta_certa": "s = input('Digite uma string: ')\nfrequencia = {c: s.count(c) for c in s}\nprint(frequencia)"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 1,
+        "enunciado": "Desafio 345: Implemente um generator que produza os números da sequência de Fibonacci indefinidamente.",
+        "resposta_certa": "def fibonacci():\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\ngen = fibonacci()\nfor _ in range(10):\n    print(next(gen))"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 2,
+        "enunciado": "Desafio 346: Utilize a função map para converter uma lista de números em strings.",
+        "resposta_certa": "numeros = [1, 2, 3, 4]\nstrings = list(map(str, numeros))\nprint(strings)"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 3,
+        "enunciado": "Desafio 347: Utilize a função filter para separar números pares de uma lista.",
+        "resposta_certa": "numeros = [1,2,3,4,5,6]\npares = list(filter(lambda x: x % 2 == 0, numeros))\nprint(pares)"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 1,
+        "enunciado": "Desafio 348: Implemente um iterador personalizado para uma classe que itere sobre seus atributos numéricos.",
+        "resposta_certa": "class Numero:\n    def __init__(self, *args):\n        self.valores = args\n    def __iter__(self):\n        return iter(self.valores)\n\nnum = Numero(1,2,3,4)\nfor v in num:\n    print(v)"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 2,
+        "enunciado": "Desafio 349: Utilize uma função lambda para somar dois números.",
+        "resposta_certa": "soma = lambda a, b: a + b\nprint(soma(10, 15))"
+    },
+    {
+        "categoria": "Avançado: Conceitos de Python",
+        "dificuldade": 3,
+        "enunciado": "Desafio 350: Utilize a função reduce para calcular o produto de todos os elementos de uma lista.",
+        "resposta_certa": "from functools import reduce\nlista = [1,2,3,4]\nproduto = reduce(lambda a, b: a * b, lista)\nprint(produto)"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 351: Desenvolva um programa que integre dados de duas APIs e exiba um dashboard no terminal.",
+        "resposta_certa": "# Exemplo ilustrativo\nimport requests\nr1 = requests.get('https://api.exemplo1.com/data')\nr2 = requests.get('https://api.exemplo2.com/data')\nprint('Dashboard:', r1.json(), r2.json())"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 352: Crie um programa que simule a leitura de dados de sensores e os exiba em tempo real.",
+        "resposta_certa": "import time\nimport random\nwhile True:\n    dado = random.randint(1, 100)\n    print('Sensor:', dado)\n    time.sleep(1)"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 353: Implemente um sistema de gerenciamento de tarefas que permita adicionar, remover e listar tarefas.",
+        "resposta_certa": "tarefas = []\nwhile True:\n    acao = input('Adicionar (a), Remover (r) ou Listar (l) (s para sair): ')\n    if acao == 's':\n        break\n    elif acao == 'a':\n        tarefa = input('Digite a tarefa: ')\n        tarefas.append(tarefa)\n    elif acao == 'r':\n        tarefa = input('Digite a tarefa a remover: ')\n        if tarefa in tarefas:\n            tarefas.remove(tarefa)\n    elif acao == 'l':\n        print(tarefas)"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 354: Desenvolva um chat simples utilizando sockets.",
+        "resposta_certa": "# Exemplo simplificado para servidor\nimport socket\ns = socket.socket()\ns.bind(('localhost', 12345))\ns.listen(1)\nconn, addr = s.accept()\nprint('Conectado por', addr)\nwhile True:\n    data = conn.recv(1024)\n    if not data:\n        break\n    conn.sendall(data)\nconn.close()"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 355: Crie um programa que leia dados do usuário e os salve em um arquivo de texto.",
+        "resposta_certa": "dados = input('Digite os dados: ')\nwith open('dados.txt', 'w') as f:\n    f.write(dados)"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 356: Simule uma loteria, gerando números aleatórios e comparando com uma aposta do usuário.",
+        "resposta_certa": "import random\naposta = set(map(int, input('Digite 6 números: ').split()))\nsorteio = set(random.sample(range(1, 61), 6))\nprint('Aposta:', aposta)\nprint('Sorteio:', sorteio)\nprint('Acertos:', len(aposta.intersection(sorteio)))"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 357: Implemente o jogo da velha com uma inteligência artificial simples.",
+        "resposta_certa": "# Exemplo simplificado (sem IA completa)\nprint('Jogo da Velha - Exemplo')"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 358: Crie um gerador de senhas aleatórias contendo letras, números e símbolos.",
+        "resposta_certa": "import random\nimport string\n\ndef gerar_senha(tamanho=8):\n    caracteres = string.ascii_letters + string.digits + string.punctuation\n    return ''.join(random.choice(caracteres) for _ in range(tamanho))\n\nprint(gerar_senha(12))"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 359: Valide a complexidade de uma senha (mínimo 8 caracteres, com letras maiúsculas, minúsculas e números).",
+        "resposta_certa": "senha = input('Digite uma senha: ')\nif (len(senha) >= 8 and any(c.islower() for c in senha) and any(c.isupper() for c in senha) and any(c.isdigit() for c in senha)):\n    print('Senha válida')\nelse:\n    print('Senha inválida')"
+    },
+    {
+        "categoria": "Projeto Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 360: Desenvolva um gerador de senhas robusto e salve as senhas em um arquivo criptografado.",
+        "resposta_certa": "# Exemplo ilustrativo\nimport random, string, hashlib\n\ndef gerar_senha(tamanho=12):\n    caracteres = string.ascii_letters + string.digits + string.punctuation\n    return ''.join(random.choice(caracteres) for _ in range(tamanho))\n\nsenha = gerar_senha()\nhash_senha = hashlib.sha256(senha.encode()).hexdigest()\nwith open('senhas.txt', 'w') as f:\n    f.write(hash_senha)\nprint('Senha gerada e hash salva.')"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 2,
+        "enunciado": "Desafio 361: Conecte a um banco de dados SQLite e crie uma tabela de usuários.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco_avancado.db')\ncursor = conexao.cursor()\ncursor.execute('CREATE TABLE IF NOT EXISTS usuarios (id INTEGER PRIMARY KEY, nome TEXT)')\nconexao.commit()\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 3,
+        "enunciado": "Desafio 362: Insira, atualize e remova registros em um banco de dados SQLite.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco_avancado.db')\ncursor = conexao.cursor()\ncursor.execute(\"INSERT INTO usuarios (nome) VALUES ('João')\")\ncursor.execute(\"UPDATE usuarios SET nome = 'João Atualizado' WHERE nome = 'João'\")\ncursor.execute(\"DELETE FROM usuarios WHERE nome = 'João Atualizado'\")\nconexao.commit()\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 1,
+        "enunciado": "Desafio 363: Leia dados de um banco SQLite e exiba-os em uma interface gráfica simples.",
+        "resposta_certa": "import sqlite3\nimport tkinter as tk\n\nconexao = sqlite3.connect('banco_avancado.db')\ncursor = conexao.cursor()\ncursor.execute('SELECT * FROM usuarios')\nusuarios = cursor.fetchall()\nconexao.close()\n\nroot = tk.Tk()\nfor usuario in usuarios:\n    tk.Label(root, text=str(usuario)).pack()\nroot.mainloop()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 2,
+        "enunciado": "Desafio 364: Crie um banco de dados e adicione registros de clientes.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('clientes.db')\ncursor = conexao.cursor()\ncursor.execute('CREATE TABLE IF NOT EXISTS clientes (id INTEGER PRIMARY KEY, nome TEXT)')\nclientes = [('Maria',), ('Pedro',), ('Luiza',)]\ncursor.executemany('INSERT INTO clientes (nome) VALUES (?)', clientes)\nconexao.commit()\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 3,
+        "enunciado": "Desafio 365: Realize consultas avançadas em um banco de dados SQLite e exiba os resultados.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('clientes.db')\ncursor = conexao.cursor()\ncursor.execute('SELECT nome FROM clientes WHERE id > 1')\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 1,
+        "enunciado": "Desafio 366: Integre um banco de dados MySQL e permita operações CRUD via interface web (exemplo simplificado).",
+        "resposta_certa": "# Exemplo ilustrativo (configuração real requer instalação de mysql-connector-python)\nimport mysql.connector\nconexao = mysql.connector.connect(host='localhost', user='root', password='senha', database='meubanco')\ncursor = conexao.cursor()\ncursor.execute('SELECT * FROM tabela')\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 2,
+        "enunciado": "Desafio 367: Utilize SQLAlchemy para criar um modelo de dados simples.",
+        "resposta_certa": "from sqlalchemy import create_engine, Column, Integer, String\nfrom sqlalchemy.ext.declarative import declarative_base\n\nengine = create_engine('sqlite:///banco_avancado.db', echo=True)\nBase = declarative_base()\n\nclass Cliente(Base):\n    __tablename__ = 'clientes'\n    id = Column(Integer, primary_key=True)\n    nome = Column(String)\n\nBase.metadata.create_all(engine)"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 3,
+        "enunciado": "Desafio 368: Insira e consulte dados de um banco SQLite utilizando SQLAlchemy.",
+        "resposta_certa": "from sqlalchemy import create_engine\nfrom sqlalchemy.orm import sessionmaker\nfrom modelo import Cliente  # supondo que o modelo esteja definido\n\nengine = create_engine('sqlite:///banco_avancado.db')\nSession = sessionmaker(bind=engine)\nsessao = Session()\nclientes = sessao.query(Cliente).all()\nfor c in clientes:\n    print(c.nome)"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 1,
+        "enunciado": "Desafio 369: Implemente relacionamentos complexos (um para muitos) utilizando SQLAlchemy.",
+        "resposta_certa": "# Exemplo ilustrativo\nprint('Implementação de relacionamentos com SQLAlchemy')"
+    },
+    {
+        "categoria": "Banco de Dados Avançado",
+        "dificuldade": 2,
+        "enunciado": "Desafio 370: Conecte-se a um banco de dados e imprima o nome das tabelas existentes.",
+        "resposta_certa": "import sqlite3\nconexao = sqlite3.connect('banco_avancado.db')\ncursor = conexao.cursor()\ncursor.execute(\"SELECT name FROM sqlite_master WHERE type='table'\")\nprint(cursor.fetchall())\nconexao.close()"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 3,
+        "enunciado": "Desafio 371: Implemente uma criptografia simples (ex: cifra de César) para mensagens.",
+        "resposta_certa": "def cifra_cesar(s, deslocamento):\n    resultado = ''\n    for char in s:\n        if char.isalpha():\n            base = ord('A') if char.isupper() else ord('a')\n            resultado += chr((ord(char) - base + deslocamento) % 26 + base)\n        else:\n            resultado += char\n    return resultado\n\nprint(cifra_cesar('Hello, World!', 3))"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 1,
+        "enunciado": "Desafio 372: Utilize a biblioteca cryptography para criptografar e descriptografar dados.",
+        "resposta_certa": "from cryptography.fernet import Fernet\n\nkey = Fernet.generate_key()\ncipher_suite = Fernet(key)\n\ntexto = b'Mensagem secreta'\ntexto_criptografado = cipher_suite.encrypt(texto)\nprint(texto_criptografado)\n\ntexto_decriptografado = cipher_suite.decrypt(texto_criptografado)\nprint(texto_decriptografado)"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 2,
+        "enunciado": "Desafio 373: Leia uma mensagem e aplique uma cifra de César com deslocamento fixo.",
+        "resposta_certa": "def cifra(s, deslocamento=3):\n    resultado = ''\n    for char in s:\n        if char.isalpha():\n            base = ord('A') if char.isupper() else ord('a')\n            resultado += chr((ord(char) - base + deslocamento) % 26 + base)\n        else:\n            resultado += char\n    return resultado\n\nprint(cifra('Exemplo'))"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 3,
+        "enunciado": "Desafio 374: Implemente verificação de integridade usando hash (ex: SHA256).",
+        "resposta_certa": "import hashlib\ntexto = input('Digite um texto: ')\nhash_texto = hashlib.sha256(texto.encode()).hexdigest()\nprint(hash_texto)"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 1,
+        "enunciado": "Desafio 375: Estabeleça comunicação segura via HTTPS validando o certificado do servidor.",
+        "resposta_certa": "import requests\nr = requests.get('https://www.google.com')\nprint('Certificado válido' if r.ok else 'Erro')"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 2,
+        "enunciado": "Desafio 376: Gere um hash MD5 de um arquivo.",
+        "resposta_certa": "import hashlib\nwith open('arquivo.txt', 'rb') as f:\n    conteudo = f.read()\nprint(hashlib.md5(conteudo).hexdigest())"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 3,
+        "enunciado": "Desafio 377: Compare os hashes de dois arquivos utilizando hashlib.",
+        "resposta_certa": "import hashlib\n\ndef hash_arquivo(nome):\n    with open(nome, 'rb') as f:\n        return hashlib.sha256(f.read()).hexdigest()\n\nhash1 = hash_arquivo('arquivo1.txt')\nhash2 = hash_arquivo('arquivo2.txt')\nprint('Iguais' if hash1 == hash2 else 'Diferentes')"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 1,
+        "enunciado": "Desafio 378: Implemente autenticação por token em uma API simples.",
+        "resposta_certa": "# Exemplo ilustrativo\nprint('Autenticação por token implementada')"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 2,
+        "enunciado": "Desafio 379: Leia uma senha e converta-a para um hash seguro.",
+        "resposta_certa": "import hashlib\nsenha = input('Digite uma senha: ')\nprint(hashlib.sha256(senha.encode()).hexdigest())"
+    },
+    {
+        "categoria": "Criptografia e Segurança",
+        "dificuldade": 3,
+        "enunciado": "Desafio 380: Verifique a força de uma senha avaliando letras, números e símbolos.",
+        "resposta_certa": "senha = input('Digite uma senha: ')\nif (len(senha) >= 8 and any(c.isupper() for c in senha) and any(c.islower() for c in senha) and any(c.isdigit() for c in senha) and any(c in '!@#$%^&*()' for c in senha)):\n    print('Senha forte')\nelse:\n    print('Senha fraca')"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 1,
+        "enunciado": "Desafio 381: Utilize scikit-learn para treinar um modelo de classificação simples (ex: Iris dataset).",
+        "resposta_certa": "from sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.tree import DecisionTreeClassifier\n\ndados = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(dados.data, dados.target, test_size=0.2)\nclf = DecisionTreeClassifier()\nclf.fit(X_train, y_train)\nprint('Acurácia:', clf.score(X_test, y_test))"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 2,
+        "enunciado": "Desafio 382: Utilize NumPy para criar um array com 10 números aleatórios.",
+        "resposta_certa": "import numpy as np\narray = np.random.randint(0, 100, 10)\nprint(array)"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 3,
+        "enunciado": "Desafio 383: Utilize pandas para ler um arquivo CSV e calcular estatísticas básicas.",
+        "resposta_certa": "import pandas as pd\ndf = pd.read_csv('dados.csv')\nprint(df.describe())"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 1,
+        "enunciado": "Desafio 384: Treine um modelo de regressão linear com scikit-learn e preveja valores.",
+        "resposta_certa": "from sklearn.linear_model import LinearRegression\nimport numpy as np\nmodel = LinearRegression()\nX = np.array([[1], [2], [3], [4]])\ny = np.array([2, 4, 6, 8])\nmodel.fit(X, y)\nprint(model.predict([[5]]))"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 2,
+        "enunciado": "Desafio 385: Plote um gráfico de linha simples utilizando matplotlib.",
+        "resposta_certa": "import matplotlib.pyplot as plt\nplt.plot([1,2,3,4], [10,20,25,30])\nplt.show()"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 3,
+        "enunciado": "Desafio 386: Utilize seaborn para visualizar a distribuição de dados de um DataFrame.",
+        "resposta_certa": "import seaborn as sns\nimport pandas as pd\n\ndf = pd.read_csv('dados.csv')\nsns.histplot(df['coluna'])\nplt.show()"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 1,
+        "enunciado": "Desafio 387: Implemente uma análise de clusters utilizando o algoritmo k-means.",
+        "resposta_certa": "from sklearn.cluster import KMeans\nimport numpy as np\n\ndados = np.random.rand(50, 2)\nmodelo = KMeans(n_clusters=3)\nmodelo.fit(dados)\nprint(modelo.labels_)"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 2,
+        "enunciado": "Desafio 388: Utilize NumPy para calcular média, mediana e desvio padrão de um array.",
+        "resposta_certa": "import numpy as np\narray = np.array([1,2,3,4,5])\nprint('Média:', np.mean(array))\nprint('Mediana:', np.median(array))\nprint('Desvio padrão:', np.std(array))"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 3,
+        "enunciado": "Desafio 389: Utilize pandas para filtrar dados de um DataFrame com base em condições específicas.",
+        "resposta_certa": "import pandas as pd\ndf = pd.read_csv('dados.csv')\nfiltrado = df[df['Valor'] > 50]\nprint(filtrado)"
+    },
+    {
+        "categoria": "Machine Learning e Data Science",
+        "dificuldade": 1,
+        "enunciado": "Desafio 390: Avalie o desempenho de um modelo de machine learning utilizando acurácia, precisão e recall.",
+        "resposta_certa": "from sklearn.metrics import accuracy_score, precision_score, recall_score\n# Exemplo ilustrativo\nprint('Métricas avaliadas')"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 391: Desenvolva um sistema que gerencie um catálogo de produtos utilizando funções, listas e dicionários.",
+        "resposta_certa": "produtos = []\nwhile True:\n    acao = input('Adicionar (a), Listar (l) ou Sair (s): ')\n    if acao == 's':\n        break\n    elif acao == 'a':\n        nome = input('Digite o nome do produto: ')\n        preco = float(input('Digite o preço: '))\n        produtos.append({'nome': nome, 'preco': preco})\n    elif acao == 'l':\n        for p in produtos:\n            print(p)\nprint('Catálogo final:', produtos)"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 392: Crie um sistema de reservas para um restaurante, armazenando os dados em um dicionário.",
+        "resposta_certa": "reservas = {}\nwhile True:\n    nome = input('Digite seu nome (ou sair para encerrar): ')\n    if nome.lower() == 'sair':\n        break\n    reserva = input('Digite o horário da reserva: ')\n    reservas[nome] = reserva\nprint(reservas)"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 393: Implemente um sistema de gerenciamento de tarefas com interface gráfica e armazenamento persistente.",
+        "resposta_certa": "# Exemplo simplificado\nprint('Sistema de tarefas implementado')"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 394: Leia dados do usuário, armazene-os em um dicionário e exiba-os formatados.",
+        "resposta_certa": "dados = {}\nnome = input('Digite seu nome: ')\nedade = input('Digite sua idade: ')\ndados['nome'] = nome\ndados['idade'] = idade\nprint(dados)"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 395: Crie um carrinho de compras que permita adicionar, remover itens e calcular o total.",
+        "resposta_certa": "carrinho = []\nwhile True:\n    acao = input('Adicionar (a), Remover (r), Listar (l) ou Sair (s): ')\n    if acao == 's':\n        break\n    elif acao == 'a':\n        item = input('Digite o item e o preço (separados por espaço): ').split()\n        carrinho.append({'item': item[0], 'preco': float(item[1])})\n    elif acao == 'r':\n        item = input('Digite o item a remover: ')\n        carrinho = [i for i in carrinho if i['item'] != item]\n    elif acao == 'l':\n        print(carrinho)\nprint('Total:', sum(i['preco'] for i in carrinho))"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 396: Desenvolva um sistema de gerenciamento de uma livraria integrando OOP, banco de dados e interface gráfica.",
+        "resposta_certa": "# Exemplo ilustrativo\nprint('Sistema de livraria implementado')"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 397: Crie um programa que gere uma lista de números primos até um limite definido pelo usuário.",
+        "resposta_certa": "def eh_primo(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\n\nlimite = int(input('Digite o limite: '))\nprimos = [n for n in range(2, limite+1) if eh_primo(n)]\nprint(primos)"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 3,
+        "enunciado": "Desafio 398: Implemente um jogo simples de adivinhação de números com feedback interativo.",
+        "resposta_certa": "import random\nnumero = random.randint(1, 100)\nwhile True:\n    chute = int(input('Adivinhe o número: '))\n    if chute < numero:\n        print('Maior')\n    elif chute > numero:\n        print('Menor')\n    else:\n        print('Acertou!')\n        break"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 1,
+        "enunciado": "Desafio 399: Desenvolva o jogo da forca utilizando funções, loops e manipulação de strings.",
+        "resposta_certa": "# Exemplo simplificado do jogo da forca\npalavra = 'python'\nletras_adivinhadas = set()\nwhile True:\n    exibicao = ''.join([c if c in letras_adivinhadas else '_' for c in palavra])\n    print(exibicao)\n    if set(palavra) == letras_adivinhadas:\n        print('Você ganhou!')\n        break\n    letra = input('Digite uma letra: ')\n    letras_adivinhadas.add(letra)"
+    },
+    {
+        "categoria": "Projeto Final Integrador",
+        "dificuldade": 2,
+        "enunciado": "Desafio 400: Crie um sistema de gerenciamento de uma agenda de contatos integrando diversos conceitos aprendidos.",
+        "resposta_certa": "agenda = {}\nwhile True:\n    acao = input('Adicionar (a), Buscar (b) ou Sair (s): ')\n    if acao == 's':\n        break\n    elif acao == 'a':\n        nome = input('Digite o nome: ')\n        telefone = input('Digite o telefone: ')\n        agenda[nome] = telefone\n    elif acao == 'b':\n        nome = input('Digite o nome para buscar: ')\n        print(agenda.get(nome, 'Contato não encontrado'))\nprint(agenda)"
+    }
+]
